@@ -1,0 +1,65 @@
+[
+    {
+        "model": "employees.sexo",
+        "pk": 1,
+        "fields": {
+            "descricao": "Masculino"
+        }
+    },
+    {
+        "model": "employees.sexo",
+        "pk": 2,
+        "fields": {
+            "descricao": "Feminino"
+        }
+    },
+    {
+        "model": "employees.raca",
+        "pk": 1,
+        "fields": {
+            "descricao": "Branca"
+        }
+    },
+    {
+        "model": "employees.raca",
+        "pk": 2,
+        "fields": {
+            "descricao": "Negra"
+        }
+    },
+    {
+        "model": "employees.estadocivil",
+        "pk": 1,
+        "fields": {
+            "descricao": "Solteiro"
+        }
+    },
+    {
+        "model": "employees.estadocivil",
+        "pk": 2,
+        "fields": {
+            "descricao": "Casado"
+        }
+    },
+    {
+        "model": "employees.grauinstrucao",
+        "pk": 1,
+        "fields": {
+            "descricao": "Fundamental"
+        }
+    },
+    {
+        "model": "employees.grauinstrucao",
+        "pk": 2,
+        "fields": {
+            "descricao": "Médio"
+        }
+    },
+    {
+        "model": "employees.nacionalidade",
+        "pk": 1,
+        "fields": {
+            "descricao": "Brasileira"
+        }
+    }
+]

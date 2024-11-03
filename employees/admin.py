@@ -1,3 +1,5 @@
+import csv
+from django.http import HttpResponse
 from django.contrib import admin
 from . import models
 
@@ -54,3 +56,17 @@ class FuncionarioAdm(admin.ModelAdmin):
     list_display = ('nome_completo','cpf','telefone', 'is_active',)
     search_fields = ('nome_completo',)
     list_filter = ('is_active',)
+
+    def export_to_csv(self, request, queryset):
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="employees.csv"'
+        writer = csv.writer(response)
+        writer.writerow(['nome_completo', 'cpf', 'telefone', 'ativo',])
+        
+        for funcionario in queryset:
+            writer.writerow([funcionario.nome_completo, funcionario.cpf, funcionario.telefone, funcionario.is_active])
+
+        return response
+    
+    export_to_csv.short_description = 'Exportar para CSV'
+    actions = [export_to_csv]

@@ -18,6 +18,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    # App de Interface
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -140,3 +143,41 @@ MEDIA_URL = '/media/'
 
 THOUSAND_SEPARATOR = '.',
 USE_THOUSAND_SEPARATOR = True
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    'site_title': 'SGP',
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    'site_header': 'Uni Gestão',
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absentor None)
+    'site_brand': 'Uni Gestão (SGP)',
+
+    'icons': {
+        'auth': 'fas fa-users-cog',
+        'auth.user': 'fas fa-user',
+        'auth.Group': 'fas fa-users',
+        'employees.Cidade': 'fa-solid fa-city',
+        'employees.UF': 'fa-solid fa-compass',
+        'employees.Funcionario': 'fa-solid fa-address-book',
+        'employees.EstadoCivil': 'fa-solid fa-hand-holding-heart',
+        'employees.Deficiencia': 'fa-solid fa-wheelchair',
+        'employess.GrauInstrucao': 'fa-solid fa-file-contract',
+        'employees.Nacionalidade': 'fa-solid fa-earth-americas',
+        'employees.Raca': 'fa-solid fa-hands-holding-circle'
+    },
+
+    # Welcome text on the login screen
+    'welcome_sign': 'Bem-vindo(a) ao Uni Gestão (SGP)',
+
+    # Copyright on the footer
+    'copyright': 'Coding Solutions LTDA',
+
+    # List of model admins to search from the search bar, search bar omitted if excluded
+    # If you want to use a single search field you dont need to use a list, you can use a simple string
+    'search_model': ['employees.Funcionario',],
+
+    # Whether to show the UI customizer on the sidebar
+    # 'show_ui_builder': True,
+}

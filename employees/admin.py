@@ -1,57 +1,56 @@
 from django.contrib import admin
 from . import models
 
+@admin.register(models.Sexo)
 class SexoAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.Raca)
 class RacaAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.EstadoCivil)
 class EstadoCivilAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.GrauInstrucao)
 class GrauInstrucaoAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.Deficiencia)
 class DeficienciaAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.Nacionalidade)
 class NacionalidadeAdm(admin.ModelAdmin):
     list_display = ('descricao',)
     search_fields = ('descricao',)
 
 
+@admin.register(models.UF)
 class UFAdm(admin.ModelAdmin):
     list_display = ('sigla','nome',)
     search_fields = ('sigla',)
 
 
+@admin.register(models.Cidade)
 class CidadeAdm(admin.ModelAdmin):
     list_display = ('nome','uf',)
     search_fields = ('nome',)
 
 
+@admin.register(models.Funcionario)
 class FuncionarioAdm(admin.ModelAdmin):
-    list_display = ('nome_completo','cpf','telefone')
+    list_display = ('nome_completo','cpf','telefone', 'is_active',)
     search_fields = ('nome_completo',)
-
-
-admin.site.register(models.Sexo, SexoAdm)
-admin.site.register(models.Raca, RacaAdm)
-admin.site.register(models.EstadoCivil, EstadoCivilAdm)
-admin.site.register(models.GrauInstrucao, GrauInstrucaoAdm)
-admin.site.register(models.Deficiencia, DeficienciaAdm)
-admin.site.register(models.Nacionalidade, NacionalidadeAdm)
-admin.site.register(models.UF, UFAdm)
-admin.site.register(models.Cidade, CidadeAdm)
-admin.site.register(models.Funcionario, FuncionarioAdm)
+    list_filter = ('is_active',)

@@ -102,6 +102,7 @@ class Funcionario(models.Model):
     nacionalidade = models.ForeignKey(Nacionalidade, on_delete=models.CASCADE)
     nome_mae = models.CharField(max_length=100)
     nome_pai = models.CharField(max_length=100)
+    is_active = models.BooleanField(default=True, verbose_name='Ativo')
 
     # Naturalidade
     naturalidade_uf = models.ForeignKey(UF, related_name='naturalidade', on_delete=models.CASCADE)

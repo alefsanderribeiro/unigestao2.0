@@ -159,14 +159,19 @@ JAZZMIN_SETTINGS = {
         'auth': 'fas fa-users-cog',
         'auth.user': 'fas fa-user',
         'auth.Group': 'fas fa-users',
-        'employees.City': 'fa-solid fa-city',
-        'employees.UF': 'fa-solid fa-compass',
+
+        # App Employees
         'employees.Employee': 'fa-solid fa-address-book',
         'employees.MaritalStatus': 'fa-solid fa-hand-holding-heart',
         'employees.Deficiency': 'fa-solid fa-wheelchair',
         'employess.DegreeInstruction': 'fa-solid fa-file-contract',
         'employees.Nationality': 'fa-solid fa-earth-americas',
-        'employees.Race': 'fa-solid fa-hands-holding-circle'
+        'employees.Race': 'fa-solid fa-hands-holding-circle',
+
+        # App Geography
+        'geography.City': 'fa-solid fa-city',
+        'geography.State': 'fa-solid fa-compass',
+        'geography.Country': 'fa-solid fa-earth-americas'
     },
 
     # Welcome text on the login screen
@@ -180,7 +185,7 @@ JAZZMIN_SETTINGS = {
     'search_model': ['employees.Funcionario',],
 
     # Whether to show the UI customizer on the sidebar
-    'show_ui_builder': True,
+    # 'show_ui_builder': True,
 }
 
 JAZZMIN_UI_TWEAKS = {

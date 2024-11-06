@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/Design%20sem%20nome.png" alt="Logo Uni Gestão" width="200" height="200"/>
+  <img src="https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/logo/logo_unigestao.png" alt="Logo Uni Gestão" width="200" height="200"/>
 </div>
 
 # Uni Gestão

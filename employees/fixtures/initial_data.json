@@ -1,65 +1,171 @@
 [
     {
-        "model": "employees.sexo",
+        "model": "employees.gender",
         "pk": 1,
         "fields": {
-            "descricao": "Masculino"
+            "description": "Masculino"
         }
     },
     {
-        "model": "employees.sexo",
+        "model": "employees.gender",
         "pk": 2,
         "fields": {
-            "descricao": "Feminino"
+            "description": "Feminino"
         }
     },
+
+
     {
-        "model": "employees.raca",
+        "model": "employees.race",
         "pk": 1,
         "fields": {
-            "descricao": "Branca"
+            "description": "Branca"
         }
     },
     {
-        "model": "employees.raca",
+        "model": "employees.race",
         "pk": 2,
         "fields": {
-            "descricao": "Negra"
+            "description": "Negro"
         }
     },
     {
-        "model": "employees.estadocivil",
+        "model": "employees.race",
+        "pk": 3,
+        "fields": {
+            "description": "Pardo"
+        }
+    },
+    {
+        "model": "employees.race",
+        "pk": 4,
+        "fields": {
+            "description": "Indígena"
+        }
+    },
+    {
+        "model": "employees.race",
+        "pk": 5,
+        "fields": {
+            "description": "Amarelo"
+        }
+    },
+    {
+        "model": "employees.race",
+        "pk": 6,
+        "fields": {
+            "description": "Mulato"
+        }
+    },
+
+
+    {
+        "model": "employees.maritalstatus",
         "pk": 1,
         "fields": {
-            "descricao": "Solteiro"
+            "description": "Solteiro(a)"
         }
     },
     {
-        "model": "employees.estadocivil",
+        "model": "employees.maritalstatus",
         "pk": 2,
         "fields": {
-            "descricao": "Casado"
+            "description": "Casado(a)"
         }
     },
     {
-        "model": "employees.grauinstrucao",
+        "model": "employees.maritalstatus",
+        "pk": 3,
+        "fields": {
+            "description": "Divorciado(a)"
+        }
+    },
+    {
+        "model": "employees.maritalstatus",
+        "pk": 4,
+        "fields": {
+            "description": "Viúvo(a)"
+        }
+    },
+    {
+        "model": "employees.maritalstatus",
+        "pk": 5,
+        "fields": {
+            "description": "União Estável"
+        }
+    },
+    {
+        "model": "employees.maritalstatus",
+        "pk": 6,
+        "fields": {
+            "description": "Separado(a)"
+        }
+    },
+    {
+        "model": "employees.maritalstatus",
+        "pk": 7,
+        "fields": {
+            "description": "Companheiro(a)"
+        }
+    },
+    {
+        "model": "employees.maritalstatus",
+        "pk": 8,
+        "fields": {
+            "description": "Anulado(a)"
+        }
+    },
+
+
+    {
+        "model": "employees.degreeinstruction",
         "pk": 1,
         "fields": {
-            "descricao": "Fundamental"
+            "description": "Ensino Fundamental Completo"
         }
     },
     {
-        "model": "employees.grauinstrucao",
+        "model": "employees.degreeinstruction",
         "pk": 2,
         "fields": {
-            "descricao": "Médio"
+            "description": "Ensino Fundamental Incompleto"
         }
     },
     {
-        "model": "employees.nacionalidade",
+        "model": "employees.degreeinstruction",
+        "pk": 3,
+        "fields": {
+            "description": "Ensino Médio Completo"
+        }
+    },
+    {
+        "model": "employees.degreeinstruction",
+        "pk": 4,
+        "fields": {
+            "description": "Ensino Médio Incompleto"
+        }
+    },
+    {
+        "model": "employees.degreeinstruction",
+        "pk": 5,
+        "fields": {
+            "description": "Ensino Superior Completo"
+        }
+    },
+    {
+        "model": "employees.degreeinstruction",
+        "pk": 6,
+        "fields": {
+            "description": "Ensino Superior Incompleto"
+        }
+    },
+
+
+    {
+        "model": "employees.nationality",
         "pk": 1,
         "fields": {
-            "descricao": "Brasileira"
+            "description": "Brasileiro(a)"
         }
     }
 ]

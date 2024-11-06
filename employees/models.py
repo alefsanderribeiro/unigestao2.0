@@ -1,4 +1,5 @@
 from django.db import models
+from geography.models import State, City
 
 class Gender(models.Model):
     description = models.CharField(max_length=20, verbose_name='Descrição')
@@ -66,30 +67,6 @@ class Nationality(models.Model):
         return self.description
 
 
-class UF(models.Model):
-    acronym = models.CharField(max_length=2, verbose_name='Sigla')
-    name = models.CharField(max_length=30, verbose_name='Nome')
-
-    class Meta:
-        verbose_name = 'UF'
-        verbose_name_plural = 'UF'
-        
-    def __str__(self):
-        return self.acronym
-
-
-class City(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Nome')
-    uf = models.ForeignKey(UF, on_delete=models.CASCADE, verbose_name='UF')
-
-    class Meta:
-        verbose_name = 'Cidade'
-        verbose_name_plural = 'Cidades'
-        
-    def __str__(self):
-        return self.nome
-
-
 class Employee(models.Model):
     # Dados Pessoais
     full_name = models.CharField(max_length=100, verbose_name='Nome Completo')
@@ -105,7 +82,7 @@ class Employee(models.Model):
     is_active = models.BooleanField(default=True, verbose_name='Ativo')
 
     # Naturalidade
-    naturalness_uf = models.ForeignKey(UF, related_name='naturalidade', on_delete=models.CASCADE, verbose_name='Estado de Nascimento')
+    naturalness_uf = models.ForeignKey(State, related_name='naturalidade', on_delete=models.CASCADE, verbose_name='Estado de Nascimento')
     natural_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='naturalidade', verbose_name='Cidade de Nascimento')
 
     # Documentos
@@ -115,17 +92,17 @@ class Employee(models.Model):
     identity_number = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número da Identidade (RG)')
     data_emission_identity = models.DateField(blank=True, null=True, verbose_name='Data da Emissão')
     organ_expedidor_identidade = models.CharField(max_length=50, blank=True, null=True, verbose_name='Orgão Expedidor')
-    uf_identity = models.ForeignKey(UF, related_name='identidade', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição')
+    uf_identity = models.ForeignKey(State, related_name='identidade', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição')
 
     # Carteira de Trabalho
     number_ctps = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número CTPS')
     series_ctps = models.CharField(max_length=10, blank=True, null=True, verbose_name='Série CTPS')
     data_emission_ctps = models.DateField(blank=True, null=True, verbose_name='Data Emissão')
-    uf_ctps = models.ForeignKey(UF, related_name='ctps', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição da CTPS')
+    uf_ctps = models.ForeignKey(State, related_name='ctps', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição da CTPS')
 
     # Dados complementares
     cep = models.CharField(max_length=10, verbose_name='CEP')
-    address_uf = models.ForeignKey(UF, related_name='endereco', on_delete=models.CASCADE, verbose_name='UF')
+    address_uf = models.ForeignKey(State, related_name='endereco', on_delete=models.CASCADE, verbose_name='Estado (UF)')
     city_address = models.ForeignKey(City, related_name='endereco', on_delete=models.CASCADE, verbose_name='Cidade')
     neighborhood = models.CharField(max_length=50, verbose_name='Bairro')
     public_place = models.CharField(max_length=100, verbose_name='Logradouro')

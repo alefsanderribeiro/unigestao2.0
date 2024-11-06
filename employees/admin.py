@@ -39,18 +39,6 @@ class NacionalidadeAdm(admin.ModelAdmin):
     search_fields = ('description',)
 
 
-@admin.register(models.UF)
-class UFAdm(admin.ModelAdmin):
-    list_display = ('acronym','name',)
-    search_fields = ('acronym',)
-
-
-@admin.register(models.City)
-class CidadeAdm(admin.ModelAdmin):
-    list_display = ('name','uf',)
-    search_fields = ('name',)
-
-
 @admin.register(models.Employee)
 class FuncionarioAdm(admin.ModelAdmin):
     fieldsets = (

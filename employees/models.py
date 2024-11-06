@@ -1,86 +1,86 @@
 from django.db import models
 
-class Sexo(models.Model):
-    descricao = models.CharField(max_length=20)
+class Gender(models.Model):
+    description = models.CharField(max_length=20, verbose_name='Descrição')
 
     class Meta:
-        verbose_name = 'Sexo'
-        verbose_name_plural = 'Sexo'
+        verbose_name = 'Genero'
+        verbose_name_plural = 'Generos'
 
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
-class Raca(models.Model):
-    descricao = models.CharField(max_length=30)
+class Race(models.Model):
+    description = models.CharField(max_length=30, verbose_name='Descrição')
 
     class Meta:
         verbose_name = 'Raça'
         verbose_name_plural = 'Raça'
         
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
-class EstadoCivil(models.Model):
-    descricao = models.CharField(max_length=20)
+class MaritalStatus(models.Model):
+    description = models.CharField(max_length=20, verbose_name='Descrição')
 
     class Meta:
         verbose_name = 'Estado Civil'
         verbose_name_plural = 'Estado Civil'
         
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
-class GrauInstrucao(models.Model):
-    descricao = models.CharField(max_length=30)
+class DegreeInstruction(models.Model):
+    description = models.CharField(max_length=30, verbose_name='Descrição')
 
     class Meta:
         verbose_name = 'Grau de Instrução'
         verbose_name_plural = 'Grau de Instrução'
         
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
-class Deficiencia(models.Model):
-    descricao = models.CharField(max_length=50)
+class Deficiency(models.Model):
+    description = models.CharField(max_length=50, verbose_name='Descrição')
 
     class Meta:
-        verbose_name = 'Deficiencia'
-        verbose_name_plural = 'Deficiencia'
+        verbose_name = 'Deficiência'
+        verbose_name_plural = 'Deficiência'
         
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
-class Nacionalidade(models.Model):
-    descricao = models.CharField(max_length=50)
+class Nationality(models.Model):
+    description = models.CharField(max_length=50, verbose_name='Descrição')
 
     class Meta:
         verbose_name = 'Nacionalidade'
         verbose_name_plural = 'Nacionalidade'
         
     def __str__(self):
-        return self.descricao
+        return self.description
 
 
 class UF(models.Model):
-    sigla = models.CharField(max_length=2)
-    nome = models.CharField(max_length=30)
+    acronym = models.CharField(max_length=2, verbose_name='Sigla')
+    name = models.CharField(max_length=30, verbose_name='Nome')
 
     class Meta:
         verbose_name = 'UF'
         verbose_name_plural = 'UF'
         
     def __str__(self):
-        return self.sigla
+        return self.acronym
 
 
-class Cidade(models.Model):
-    nome = models.CharField(max_length=50)
-    uf = models.ForeignKey(UF, on_delete=models.CASCADE)
+class City(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Nome')
+    uf = models.ForeignKey(UF, on_delete=models.CASCADE, verbose_name='UF')
 
     class Meta:
         verbose_name = 'Cidade'
@@ -90,55 +90,56 @@ class Cidade(models.Model):
         return self.nome
 
 
-class Funcionario(models.Model):
+class Employee(models.Model):
     # Dados Pessoais
-    nome_completo = models.CharField(max_length=100)
-    sexo = models.ForeignKey(Sexo, on_delete=models.CASCADE)
-    raca = models.ForeignKey(Raca, on_delete=models.CASCADE)
-    estado_civil = models.ForeignKey(EstadoCivil, on_delete=models.CASCADE)
-    data_nascimento = models.DateField()
-    grau_instruacao = models.ForeignKey(GrauInstrucao, on_delete=models.CASCADE)
-    deficiencia = models.ForeignKey(Deficiencia, on_delete=models.CASCADE, null=True, blank=True)
-    nacionalidade = models.ForeignKey(Nacionalidade, on_delete=models.CASCADE)
-    nome_mae = models.CharField(max_length=100)
-    nome_pai = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100, verbose_name='Nome Completo')
+    gender = models.ForeignKey(Gender, on_delete=models.CASCADE, verbose_name='Genero')
+    race = models.ForeignKey(Race, on_delete=models.CASCADE, verbose_name='Raça')
+    marital_status = models.ForeignKey(MaritalStatus, on_delete=models.CASCADE, verbose_name='Estado Civil')
+    birth_date = models.DateField(verbose_name='Data de Nascimento')
+    degree_instruction = models.ForeignKey(DegreeInstruction, on_delete=models.CASCADE, verbose_name='Grau de Instrução')
+    deficiency = models.ForeignKey(Deficiency, on_delete=models.CASCADE, null=True, blank=True, verbose_name='Deficiência')
+    nationality = models.ForeignKey(Nationality, on_delete=models.CASCADE, verbose_name='Nacionalidade')
+    mother_name = models.CharField(max_length=100, blank=True, null=True, verbose_name='Nome da Mãe')
+    father_name = models.CharField(max_length=100, blank=True, null=True, verbose_name='Nome do Pai')
     is_active = models.BooleanField(default=True, verbose_name='Ativo')
 
     # Naturalidade
-    naturalidade_uf = models.ForeignKey(UF, related_name='naturalidade', on_delete=models.CASCADE)
-    naturalidade_cidade = models.ForeignKey(Cidade, on_delete=models.CASCADE, related_name='naturalidade')
+    naturalness_uf = models.ForeignKey(UF, related_name='naturalidade', on_delete=models.CASCADE, verbose_name='Estado de Nascimento')
+    natural_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='naturalidade', verbose_name='Cidade de Nascimento')
 
     # Documentos
-    cpf = models.CharField(max_length=11, unique=True)
-    pis_nis = models.CharField(max_length=11, unique=True)
-    certificado_militar = models.CharField(max_length=20, null=True, blank=True)
-    numero_identidade = models.CharField(max_length=20)
-    data_emissao_identidade = models.DateField()
-    orgao_expedidor_identidade = models.CharField(max_length=50)
-    uf_identidade = models.ForeignKey(UF, related_name='identidade', on_delete=models.CASCADE)
+    cpf = models.CharField(max_length=11, unique=True, verbose_name='CPF')
+    pis_nis = models.CharField(max_length=11, unique=True, blank=True, null=True, verbose_name='PIS/NIS')
+    military_certificate = models.CharField(max_length=20, null=True, blank=True, verbose_name='Certificado Militar (RA)')
+    identity_number = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número da Identidade (RG)')
+    data_emission_identity = models.DateField(blank=True, null=True, verbose_name='Data da Emissão')
+    organ_expedidor_identidade = models.CharField(max_length=50, blank=True, null=True, verbose_name='Orgão Expedidor')
+    uf_identity = models.ForeignKey(UF, related_name='identidade', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição')
 
     # Carteira de Trabalho
-    numero_ctps = models.CharField(max_length=20)
-    serie_ctps = models.CharField(max_length=10)
-    data_emissao_ctps = models.DateField()
-    uf_ctps = models.ForeignKey(UF, related_name='ctps', on_delete=models.CASCADE)
+    number_ctps = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número CTPS')
+    series_ctps = models.CharField(max_length=10, blank=True, null=True, verbose_name='Série CTPS')
+    data_emission_ctps = models.DateField(blank=True, null=True, verbose_name='Data Emissão')
+    uf_ctps = models.ForeignKey(UF, related_name='ctps', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição da CTPS')
 
     # Dados complementares
-    cep = models.CharField(max_length=10)
-    endereco_uf = models.ForeignKey(UF, related_name='endereco', on_delete=models.CASCADE)
-    endereco_cidade = models.ForeignKey(Cidade, related_name='endereco', on_delete=models.CASCADE)
-    bairro = models.CharField(max_length=50)
-    logradouro = models.CharField(max_length=100)
-    numero = models.CharField(max_length=10)
-    complemento = models.CharField(max_length=50, null=True, blank=True)
+    cep = models.CharField(max_length=10, verbose_name='CEP')
+    address_uf = models.ForeignKey(UF, related_name='endereco', on_delete=models.CASCADE, verbose_name='UF')
+    city_address = models.ForeignKey(City, related_name='endereco', on_delete=models.CASCADE, verbose_name='Cidade')
+    neighborhood = models.CharField(max_length=50, verbose_name='Bairro')
+    public_place = models.CharField(max_length=100, verbose_name='Logradouro')
+    number = models.CharField(max_length=10, verbose_name='Número')
+    complement = models.CharField(max_length=50, null=True, blank=True, verbose_name='Complemento')
 
-    contato = models.CharField(max_length=15)
-    telefone = models.CharField(max_length=15)
-    email = models.EmailField()
+    # Contato
+    contact = models.CharField(max_length=15, blank=True, null=True, verbose_name='Contato')
+    telephone = models.CharField(max_length=15, blank=True, null=True, verbose_name='Telefone')
+    email = models.EmailField(blank=True, null=True, verbose_name='E-mail')
 
     class Meta:
         verbose_name = 'Funcionário'
         verbose_name_plural = 'Funcionários'
 
     def __str__(self):
-        return self.nome_completo
+        return self.full_name

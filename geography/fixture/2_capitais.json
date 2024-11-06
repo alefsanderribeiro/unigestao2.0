@@ -1,0 +1,245 @@
+[
+    {
+        "model": "geography.capital",
+        "pk": 1,
+        "fields": {
+            "name": "Porto Velho",
+            "state": 1,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 2,
+        "fields": {
+            "name": "Rio Branco",
+            "state": 2,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 3,
+        "fields": {
+            "name": "Manaus",
+            "state": 3,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 4,
+        "fields": {
+            "name": "Boa Vista",
+            "state": 4,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 5,
+        "fields": {
+            "name": "Belém",
+            "state": 5,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 6,
+        "fields": {
+            "name": "Macapá",
+            "state": 6,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 7,
+        "fields": {
+            "name": "Palmas",
+            "state": 7,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 8,
+        "fields": {
+            "name": "São Luís",
+            "state": 8,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 9,
+        "fields": {
+            "name": "Teresina",
+            "state": 9,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 10,
+        "fields": {
+            "name": "Fortaleza",
+            "state": 10,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 11,
+        "fields": {
+            "name": "Natal",
+            "state": 11,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 12,
+        "fields": {
+            "name": "João Pessoa",
+            "state": 12,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 13,
+        "fields": {
+            "name": "Recife",
+            "state": 13,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 14,
+        "fields": {
+            "name": "Maceió",
+            "state": 14,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 15,
+        "fields": {
+            "name": "Aracaju",
+            "state": 15,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 16,
+        "fields": {
+            "name": "Salvador",
+            "state": 16,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 17,
+        "fields": {
+            "name": "Belo Horizonte",
+            "state": 17,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 18,
+        "fields": {
+            "name": "Vitória",
+            "state": 18,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 19,
+        "fields": {
+            "name": "Rio de Janeiro",
+            "state": 19,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 20,
+        "fields": {
+            "name": "São Paulo",
+            "state": 20,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 21,
+        "fields": {
+            "name": "Curitiba",
+            "state": 21,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 22,
+        "fields": {
+            "name": "Florianópolis",
+            "state": 22,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 23,
+        "fields": {
+            "name": "Porto Alegre",
+            "state": 23,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 24,
+        "fields": {
+            "name": "Cuiabá",
+            "state": 24,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 25,
+        "fields": {
+            "name": "Campo Grande",
+            "state": 25,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 26,
+        "fields": {
+            "name": "Goiânia",
+            "state": 26,
+            "country": 1
+        }
+    },
+    {
+        "model": "geography.capital",
+        "pk": 27,
+        "fields": {
+            "name": "Brasília",
+            "state": 27,
+            "country": 1
+        }
+    }
+]

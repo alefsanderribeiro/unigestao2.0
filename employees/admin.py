@@ -3,58 +3,89 @@ from django.http import HttpResponse
 from django.contrib import admin
 from . import models
 
-@admin.register(models.Sexo)
+@admin.register(models.Gender)
 class SexoAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
-@admin.register(models.Raca)
+@admin.register(models.Race)
 class RacaAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
-@admin.register(models.EstadoCivil)
+@admin.register(models.MaritalStatus)
 class EstadoCivilAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
-@admin.register(models.GrauInstrucao)
+@admin.register(models.DegreeInstruction)
 class GrauInstrucaoAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
-@admin.register(models.Deficiencia)
+@admin.register(models.Deficiency)
 class DeficienciaAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
-@admin.register(models.Nacionalidade)
+@admin.register(models.Nationality)
 class NacionalidadeAdm(admin.ModelAdmin):
-    list_display = ('descricao',)
-    search_fields = ('descricao',)
+    list_display = ('description',)
+    search_fields = ('description',)
 
 
 @admin.register(models.UF)
 class UFAdm(admin.ModelAdmin):
-    list_display = ('sigla','nome',)
-    search_fields = ('sigla',)
+    list_display = ('acronym','name',)
+    search_fields = ('acronym',)
 
 
-@admin.register(models.Cidade)
+@admin.register(models.City)
 class CidadeAdm(admin.ModelAdmin):
-    list_display = ('nome','uf',)
-    search_fields = ('nome',)
+    list_display = ('name','uf',)
+    search_fields = ('name',)
 
 
-@admin.register(models.Funcionario)
+@admin.register(models.Employee)
 class FuncionarioAdm(admin.ModelAdmin):
-    list_display = ('nome_completo','cpf','telefone', 'is_active',)
-    search_fields = ('nome_completo',)
+    fieldsets = (
+        ('Dados Pessoais',{
+            'fields': ('full_name', 'gender', 'race', 'marital_status',
+                       'birth_date', 'degree_instruction', 'deficiency',
+                       'nationality', 'mother_name', 'father_name',)
+        }),
+
+        ('Naturalidae', {
+            'fields': ('naturalness_uf', 'natural_city')
+        }),
+        
+        ('Documentos', {
+            'fields': ('cpf', 'pis_nis', 'military_certificate', 'identity_number',
+                       'data_emission_identity', 'organ_expedidor_identidade',
+                       'uf_identity')
+        }),
+                
+        ('Carteira de trabalho', {
+            'fields': ('number_ctps', 'series_ctps', 'data_emission_ctps', 'uf_ctps',)
+        }),
+                        
+        ('Dados complementares', {
+            'fields': ('cep', 'address_uf', 'city_address', 'neighborhood',
+                       'public_place', 'number', 'complement')
+        }),
+
+        ('Contato', {
+            'fields': ('contact', 'telephone', 'email')
+        })
+    )
+
+    list_display = ('full_name','cpf','telephone', 'is_active',)
+    search_fields = ('full_name',)
     list_filter = ('is_active',)
 
     def export_to_csv(self, request, queryset):
@@ -64,8 +95,9 @@ class FuncionarioAdm(admin.ModelAdmin):
         writer.writerow(['nome_completo', 'cpf', 'telefone', 'ativo',])
         
         for funcionario in queryset:
-            writer.writerow([funcionario.nome_completo, funcionario.cpf, funcionario.telefone, funcionario.is_active])
+            writer.writerow([funcionario.full_name, funcionario.cpf, funcionario.telephone, funcionario.is_active])
 
+        self.message_user(request, f'{queryset.count()} funcionários exportados com sucesso.')
         return response
     
     export_to_csv.short_description = 'Exportar para CSV'

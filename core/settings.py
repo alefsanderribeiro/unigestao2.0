@@ -158,14 +158,14 @@ JAZZMIN_SETTINGS = {
         'auth': 'fas fa-users-cog',
         'auth.user': 'fas fa-user',
         'auth.Group': 'fas fa-users',
-        'employees.Cidade': 'fa-solid fa-city',
+        'employees.City': 'fa-solid fa-city',
         'employees.UF': 'fa-solid fa-compass',
-        'employees.Funcionario': 'fa-solid fa-address-book',
-        'employees.EstadoCivil': 'fa-solid fa-hand-holding-heart',
-        'employees.Deficiencia': 'fa-solid fa-wheelchair',
-        'employess.GrauInstrucao': 'fa-solid fa-file-contract',
-        'employees.Nacionalidade': 'fa-solid fa-earth-americas',
-        'employees.Raca': 'fa-solid fa-hands-holding-circle'
+        'employees.Employee': 'fa-solid fa-address-book',
+        'employees.MaritalStatus': 'fa-solid fa-hand-holding-heart',
+        'employees.Deficiency': 'fa-solid fa-wheelchair',
+        'employess.DegreeInstruction': 'fa-solid fa-file-contract',
+        'employees.Nationality': 'fa-solid fa-earth-americas',
+        'employees.Race': 'fa-solid fa-hands-holding-circle'
     },
 
     # Welcome text on the login screen
@@ -179,5 +179,38 @@ JAZZMIN_SETTINGS = {
     'search_model': ['employees.Funcionario',],
 
     # Whether to show the UI customizer on the sidebar
-    # 'show_ui_builder': True,
+    'show_ui_builder': True,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-primary",
+    "navbar": "navbar-white navbar-light",
+    "no_navbar_border": False,
+    "navbar_fixed": True,
+    "layout_boxed": False,
+    "footer_fixed": True,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-primary",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "default",
+    "dark_mode_theme": None,
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    },
+    "actions_sticky_top": True
 }

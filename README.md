@@ -32,6 +32,21 @@ Este é o **Uni Gestão**, um sistema web desenvolvido com Django para gerenciar
 - **Emissão de Notas Fiscais**: Automatize a geração de notas fiscais utilizando uma integração com uma API externa para garantir um processo ágil e sem erros.
 - **Interface Responsiva**: Uso do Bootstrap 5 para garantir uma interface de usuário moderna e responsiva, com um layout dinâmico e funcional.
 
+## Cadastro de Funcionários
+
+Aqui estão algumas imagens que ilustram o processo de cadastro de funcionários na aplicação.
+
+### Formulário de Cadastro
+
+![Formulário de Cadastro de Funcionários](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/formulario_1.png)
+
+![Formulário de Cadastro de Funcionários](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/formulario_2.png)
+
+### Exemplo de Funcionário Cadastrado
+
+![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/tela_listagem.png)
+
+
 ## Ferramentas utilizadas
 
 - **Django**: Framework principal para desenvolvimento web.

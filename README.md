@@ -14,6 +14,7 @@
 
 - [Descrição do projeto](#descrição-do-projeto)
 - [Funcionalidades](#funcionalidades)
+- [Cadastro de Funcionários (com as imagens)](#cadastro-de-funcionários)
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Acesso ao projeto](#acesso-ao-projeto)
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)

@@ -64,7 +64,7 @@ class FuncionarioAdm(admin.ModelAdmin):
                         
         ('Dados complementares', {
             'fields': ('cep', 'address_uf', 'city_address', 'neighborhood',
-                       'public_place', 'number', 'complement')
+                       'number', 'complement')
         }),
 
         ('Contato', {
@@ -72,7 +72,7 @@ class FuncionarioAdm(admin.ModelAdmin):
         })
     )
 
-    list_display = ('full_name','cpf','telephone', 'is_active',)
+    list_display = ('full_name','gender','birth_date', 'cpf', 'telephone', 'is_active',)
     search_fields = ('full_name',)
     list_filter = ('is_active',)
 

@@ -105,7 +105,6 @@ class Employee(models.Model):
     address_uf = models.ForeignKey(State, related_name='endereco', on_delete=models.CASCADE, verbose_name='Estado (UF)')
     city_address = models.ForeignKey(City, related_name='endereco', on_delete=models.CASCADE, verbose_name='Cidade')
     neighborhood = models.CharField(max_length=50, verbose_name='Bairro')
-    public_place = models.CharField(max_length=100, verbose_name='Logradouro')
     number = models.CharField(max_length=10, verbose_name='Número')
     complement = models.CharField(max_length=50, null=True, blank=True, verbose_name='Complemento')
 

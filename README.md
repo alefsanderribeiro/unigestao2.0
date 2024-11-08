@@ -123,9 +123,9 @@ Você pode [acessar o código fonte do projeto](https://github.com/MarcosSerra1/
      ```
      python manage.py loaddata geography/fixtures/0_pais.json
      python manage.py loaddata geography/fixtures/1_estados.json
-     python manage.py loaddata geography/fixtures/2_capitais.jsonc
-     python manage.py loaddata geography/fixtures/3_cidades.jsonc
-     python manage.py loaddata geography/fixtures/4_regiao.jsonc
+     python manage.py loaddata geography/fixtures/2_capitais.json
+     python manage.py loaddata geography/fixtures/3_cidades.json
+     python manage.py loaddata geography/fixtures/4_regiao.json
      ```
 
 

@@ -68,6 +68,42 @@ Você pode [acessar o código fonte do projeto](https://github.com/MarcosSerra1/
 
 ### Passos para rodar o projeto localmente:
 
+#### Observação sobre Banco de Dados
+
+O projeto é configurado para usar o **PostgreSQL** quando rodando dentro de containers Docker e o **SQLite** quando rodando sem Docker. Você pode alternar entre esses dois bancos de dados alterando o valor da variável `DOCKER_MODE` nas configurações do Django.
+
+- **Com Docker (PostgreSQL)**: Quando o Docker está em uso, o banco de dados utilizado é o PostgreSQL. Para garantir a conexão correta, a variável `DOCKER_MODE` deve ser configurada como `True`. O arquivo `.env` deve conter as configurações do banco de dados, como nome, usuário e senha.
+  
+- **Sem Docker (SQLite)**: Caso você não queira usar o Docker, basta configurar `DOCKER_MODE` como `False`. Nesse caso, o projeto usará o banco de dados SQLite, que é mais simples de configurar e pode ser usado para testes rápidos ou em ambientes de desenvolvimento.
+
+No arquivo de configurações `settings.py`, o comportamento é controlado pela seguinte variável:
+
+```python
+DOCKER_MODE = True  # Altere para False para usar SQLite
+
+if DOCKER_MODE:
+    load_dotenv()
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('DB_NAME'),
+            'USER': os.getenv('DB_USER'),
+            'PASSWORD': os.getenv('DB_PASSWORD'),
+            'HOST': os.getenv('DB_HOST'),
+            'PORT': os.getenv('DB_PORT'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+```
+
+Se você optar por usar o PostgreSQL com Docker, basta definir as variáveis de ambiente no arquivo `.env`.
+
 #### Usando Docker
 
 1. Certifique-se de ter o Docker e o Docker Compose instalados. Você pode baixar o Docker em https://www.docker.com/get-started.
@@ -79,15 +115,18 @@ Você pode [acessar o código fonte do projeto](https://github.com/MarcosSerra1/
 4. Crie um arquivo `.env` com as variáveis de ambiente necessárias para a conexão do banco de dados e superusuário:
 
     ```
-    DB_NAME=nome_do_bd
-    DB_USER=nome_usuario
-    DB_PASSWORD=senha
+    # BD Conexão
+    DB_NAME=name-bd
+    DB_USER=user-bd
+    DB_PASSWORD=password-bd
     DB_HOST=db
     DB_PORT=5432
 
-    DJANGO_SUPERUSER_USERNAME=nome_para_super_user
-    DJANGO_SUPERUSER_PASSWORD=senha
-    DJANGO_SUPERUSER_EMAIL=email@exemplo.com
+    # SuperUser Django
+    DJANGO_SUPERUSER_USERNAME=super-user
+    DJANGO_SUPERUSER_PASSWORD=password-user
+    DJANGO_SUPERUSER_EMAIL=superuser@exemplo.com
+
     ```
 
 5. Rode os containers com o comando:

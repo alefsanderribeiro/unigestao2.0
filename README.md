@@ -68,6 +68,40 @@ Você pode [acessar o código fonte do projeto](https://github.com/MarcosSerra1/
 
 ### Passos para rodar o projeto localmente:
 
+#### Usando Docker
+
+1. Certifique-se de ter o Docker e o Docker Compose instalados. Você pode baixar o Docker em https://www.docker.com/get-started.
+   
+2. Clone este repositório para o seu ambiente local.
+
+3. Navegue até o diretório do projeto no terminal.
+
+4. Crie um arquivo `.env` com as variáveis de ambiente necessárias para a conexão do banco de dados e superusuário:
+
+    ```
+    DB_NAME=nome_do_bd
+    DB_USER=nome_usuario
+    DB_PASSWORD=senha
+    DB_HOST=db
+    DB_PORT=5432
+
+    DJANGO_SUPERUSER_USERNAME=nome_para_super_user
+    DJANGO_SUPERUSER_PASSWORD=senha
+    DJANGO_SUPERUSER_EMAIL=email@exemplo.com
+    ```
+
+5. Rode os containers com o comando:
+
+    ```
+    docker-compose up --build
+    ```
+
+6. O Docker irá construir a imagem, configurar o banco de dados e rodar o servidor Django. Você pode acessar a aplicação em seu navegador em [http://localhost:8000](http://localhost:8000).
+
+7. Para rodar a aplicação sem o Docker, siga as etapas abaixo.
+
+#### Sem Docker
+
 1. Certifique-se de ter o Python instalado. Você pode baixá-lo em https://www.python.org/.
 2. Clone este repositório para o seu ambiente local.
 3. Navegue até o diretório do projeto no terminal.

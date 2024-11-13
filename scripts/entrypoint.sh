@@ -5,8 +5,10 @@ echo "Rodando migrações..."
 python manage.py migrate
 
 # Carregar dados dos fixtures
-echo "Carregando fixtures de employees..."
-python manage.py loaddata employees/fixtures/*.json
+echo "Carregando fixtures de cbos..."
+python manage.py loaddata cbos/fixtures/*.json
+echo "Carregando fixtures de configurations..."
+python manage.py loaddata configurations/fixtures/*.json
 echo "Carregando fixtures de geography..."
 python manage.py loaddata geography/fixtures/*.json
 

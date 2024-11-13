@@ -1,51 +1,15 @@
 import csv
 from django.http import HttpResponse
 from django.contrib import admin
-from . import models
+from .models import *
 
-@admin.register(models.Gender)
-class SexoAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.Race)
-class RacaAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.MaritalStatus)
-class EstadoCivilAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.DegreeInstruction)
-class GrauInstrucaoAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.Deficiency)
-class DeficienciaAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.Nationality)
-class NacionalidadeAdm(admin.ModelAdmin):
-    list_display = ('description',)
-    search_fields = ('description',)
-
-
-@admin.register(models.Employee)
+@admin.register(Employee)
 class FuncionarioAdm(admin.ModelAdmin):
     fieldsets = (
         ('Dados Pessoais',{
             'fields': ('full_name', 'gender', 'race', 'marital_status',
                        'birth_date', 'degree_instruction', 'deficiency',
-                       'nationality', 'mother_name', 'father_name',)
+                       'nationality', 'mother_name', 'father_name', 'is_active',)
         }),
 
         ('Naturalidae', {
@@ -54,12 +18,12 @@ class FuncionarioAdm(admin.ModelAdmin):
         
         ('Documentos', {
             'fields': ('cpf', 'pis_nis', 'military_certificate', 'identity_number',
-                       'data_emission_identity', 'organ_expedidor_identidade',
+                       'date_emission_identity', 'organ_consignor_identity',
                        'uf_identity')
         }),
                 
         ('Carteira de trabalho', {
-            'fields': ('number_ctps', 'series_ctps', 'data_emission_ctps', 'uf_ctps',)
+            'fields': ('number_ctps', 'series_ctps', 'date_emission_ctps', 'uf_ctps',)
         }),
                         
         ('Dados complementares', {
@@ -75,6 +39,7 @@ class FuncionarioAdm(admin.ModelAdmin):
     list_display = ('full_name','gender','birth_date', 'cpf', 'telephone', 'is_active',)
     search_fields = ('full_name',)
     list_filter = ('is_active',)
+    ordering = ('full_name',)
 
     def export_to_csv(self, request, queryset):
         response = HttpResponse(content_type='text/csv')

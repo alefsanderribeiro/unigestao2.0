@@ -1,9 +1,0 @@
-[
-    {
-        "model": "employees.nationality",
-        "pk": 1,
-        "fields": {
-            "description": "Brasileiro(a)"
-        }
-    }
-]

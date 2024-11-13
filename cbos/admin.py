@@ -38,6 +38,7 @@ class CBOAdmin(admin.ModelAdmin):
     ]
     
     inlines = [OccupationInline]
+    ordering = ('occupation',)
 
 @admin.register(Occupation)
 class OccupationAdmin(admin.ModelAdmin):

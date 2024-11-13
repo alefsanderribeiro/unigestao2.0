@@ -1,71 +1,6 @@
 from django.db import models
 from geography.models import State, City
-
-class Gender(models.Model):
-    description = models.CharField(max_length=20, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Genero'
-        verbose_name_plural = 'Generos'
-
-    def __str__(self):
-        return self.description
-
-
-class Race(models.Model):
-    description = models.CharField(max_length=30, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Raça'
-        verbose_name_plural = 'Raça'
-        
-    def __str__(self):
-        return self.description
-
-
-class MaritalStatus(models.Model):
-    description = models.CharField(max_length=20, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Estado Civil'
-        verbose_name_plural = 'Estado Civil'
-        
-    def __str__(self):
-        return self.description
-
-
-class DegreeInstruction(models.Model):
-    description = models.CharField(max_length=30, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Grau de Instrução'
-        verbose_name_plural = 'Grau de Instrução'
-        
-    def __str__(self):
-        return self.description
-
-
-class Deficiency(models.Model):
-    description = models.CharField(max_length=50, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Deficiência'
-        verbose_name_plural = 'Deficiência'
-        
-    def __str__(self):
-        return self.description
-
-
-class Nationality(models.Model):
-    description = models.CharField(max_length=50, verbose_name='Descrição')
-
-    class Meta:
-        verbose_name = 'Nacionalidade'
-        verbose_name_plural = 'Nacionalidade'
-        
-    def __str__(self):
-        return self.description
-
+from configurations.models import *
 
 class Employee(models.Model):
     # Dados Pessoais
@@ -90,14 +25,14 @@ class Employee(models.Model):
     pis_nis = models.CharField(max_length=11, unique=True, blank=True, null=True, verbose_name='PIS/NIS')
     military_certificate = models.CharField(max_length=20, null=True, blank=True, verbose_name='Certificado Militar (RA)')
     identity_number = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número da Identidade (RG)')
-    data_emission_identity = models.DateField(blank=True, null=True, verbose_name='Data da Emissão')
-    organ_expedidor_identidade = models.CharField(max_length=50, blank=True, null=True, verbose_name='Orgão Expedidor')
+    date_emission_identity = models.DateField(blank=True, null=True, verbose_name='Data da Emissão')
+    organ_consignor_identity = models.CharField(max_length=50, blank=True, null=True, verbose_name='Orgão Expedidor')
     uf_identity = models.ForeignKey(State, related_name='identidade', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição')
 
     # Carteira de Trabalho
     number_ctps = models.CharField(max_length=20, blank=True, null=True, verbose_name='Número CTPS')
     series_ctps = models.CharField(max_length=10, blank=True, null=True, verbose_name='Série CTPS')
-    data_emission_ctps = models.DateField(blank=True, null=True, verbose_name='Data Emissão')
+    date_emission_ctps = models.DateField(blank=True, null=True, verbose_name='Data Emissão')
     uf_ctps = models.ForeignKey(State, related_name='ctps', blank=True, null=True, on_delete=models.CASCADE, verbose_name='Estado de Expedição da CTPS')
 
     # Dados complementares
@@ -112,6 +47,9 @@ class Employee(models.Model):
     contact = models.CharField(max_length=15, blank=True, null=True, verbose_name='Contato')
     telephone = models.CharField(max_length=15, blank=True, null=True, verbose_name='Telefone')
     email = models.EmailField(blank=True, null=True, verbose_name='E-mail')
+
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Criado em')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Editado em')
 
     class Meta:
         verbose_name = 'Funcionário'

@@ -22,7 +22,7 @@ class State(models.Model):
         verbose_name_plural = 'Estados'
 
     def __str__(self):
-        return self.name
+        return f'{self.abbreviation} - {self.name}'
 
 
 class Capital(models.Model):
@@ -47,7 +47,7 @@ class City(models.Model):
         verbose_name_plural = 'Cidades'
 
     def __str__(self):
-        return self.name
+        return f'{self.name} - {self.state}'
 
 
 class Region(models.Model):

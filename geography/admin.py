@@ -5,22 +5,27 @@ from .models import Country, State, Capital, City, Region
 class CountryAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ('name',)
+    ordering = ('name',)
 
 @admin.register(State)
 class StateAdmin(admin.ModelAdmin):
     list_display = ('name', 'abbreviation', 'code', 'country')
     search_fields = ('name',)
+    ordering = ('name',)
 
 @admin.register(Capital)
 class CapitalAdmin(admin.ModelAdmin):
     list_display = ('name', 'state', 'country')
     search_fields = ('name',)
+    ordering = ('name',)
 
 @admin.register(City)
 class CityAdmin(admin.ModelAdmin):
     list_display = ('name', 'state')
     search_fields = ('name',)
+    ordering = ('name',)
 
 @admin.register(Region)
 class RegionAdmin(admin.ModelAdmin):
     list_display = ('name',)
+    ordering = ('name',)

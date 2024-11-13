@@ -1,0 +1,10 @@
+[
+    { "model": "configurations.HarmfulExposure", "pk": 1, "fields": { "description": "Ruído" } },
+    { "model": "configurations.HarmfulExposure", "pk": 2, "fields": { "description": "Agentes Químicos" } },
+    { "model": "configurations.HarmfulExposure", "pk": 3, "fields": { "description": "Radiação" } },
+    { "model": "configurations.HarmfulExposure", "pk": 4, "fields": { "description": "Ergonomia" } },
+    { "model": "configurations.HarmfulExposure", "pk": 5, "fields": { "description": "Temperaturas Extremas" } },
+    { "model": "configurations.HarmfulExposure", "pk": 6, "fields": { "description": "Vibrações" } },
+    { "model": "configurations.HarmfulExposure", "pk": 7, "fields": { "description": "Micro-organismos" } },
+    { "model": "configurations.HarmfulExposure", "pk": 8, "fields": { "description": "Fumaça" } }
+]

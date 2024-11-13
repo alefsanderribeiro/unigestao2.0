@@ -1,0 +1,4 @@
+[
+    { "model": "configurations.AccountType", "pk": 1, "fields": { "description": "Conta Corrente" } },
+    { "model": "configurations.AccountType", "pk": 2, "fields": { "description": "Conta Poupança" } }
+]

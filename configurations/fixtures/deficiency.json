@@ -1,0 +1,50 @@
+[
+    {
+        "model": "configurations.deficiency",
+        "pk": 1,
+        "fields": {
+            "description": "Deficiência Visual"
+        }
+    },
+    {
+        "model": "configurations.deficiency",
+        "pk": 2,
+        "fields": {
+            "description": "Deficiência Auditiva"
+        }
+    },
+    {
+        "model": "configurations.deficiency",
+        "pk": 3,
+        "fields": {
+            "description": "Deficiência Física ou Motora"
+        }
+    },
+    {
+        "model": "configurations.deficiency",
+        "pk": 4,
+        "fields": {
+            "description": "Deficiência Intelectual"
+        }
+    },
+    {
+        "model": "configurations.deficiency",
+        "pk": 5,
+        "fields": {
+            "description": "Deficiência Psíquica ou Mental"
+        }
+    },    {
+        "model": "configurations.deficiency",
+        "pk": 6,
+        "fields": {
+            "description": "Deficiência Múltipla"
+        }
+    },
+    {
+        "model": "configurations.deficiency",
+        "pk": 7,
+        "fields": {
+            "description": "Deficiência Cognitiva"
+        }
+    }
+]

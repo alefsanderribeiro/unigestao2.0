@@ -1,0 +1,16 @@
+[
+    {
+        "model": "configurations.gender",
+        "pk": 1,
+        "fields": {
+            "description": "Masculino"
+        }
+    },
+    {
+        "model": "configurations.gender",
+        "pk": 2,
+        "fields": {
+            "description": "Feminino"
+        }
+    }
+]

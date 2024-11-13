@@ -1,0 +1,22 @@
+[
+    { "model": "configurations.Bank", "pk": 1, "fields": { "description": "Banco do Brasil" } },
+    { "model": "configurations.Bank", "pk": 2, "fields": { "description": "Caixa Econômica Federal" } },
+    { "model": "configurations.Bank", "pk": 3, "fields": { "description": "Santander" } },
+    { "model": "configurations.Bank", "pk": 4, "fields": { "description": "Bradesco" } },
+    { "model": "configurations.Bank", "pk": 5, "fields": { "description": "Itaú" } },
+    { "model": "configurations.Bank", "pk": 6, "fields": { "description": "Banco Safra" } },
+    { "model": "configurations.Bank", "pk": 7, "fields": { "description": "HSBC" } },
+    { "model": "configurations.Bank", "pk": 8, "fields": { "description": "Banco Original" } },
+    { "model": "configurations.Bank", "pk": 9, "fields": { "description": "Banrisul" } },
+    { "model": "configurations.Bank", "pk": 10, "fields": { "description": "BTG Pactual" } },
+    { "model": "configurations.Bank", "pk": 11, "fields": { "description": "Banco Votorantim" } },
+    { "model": "configurations.Bank", "pk": 12, "fields": { "description": "Banco do Nordeste" } },
+    { "model": "configurations.Bank", "pk": 13, "fields": { "description": "Banco da Amazônia" } },
+    { "model": "configurations.Bank", "pk": 14, "fields": { "description": "Banco PAN" } },
+    { "model": "configurations.Bank", "pk": 15, "fields": { "description": "Neon" } },
+    { "model": "configurations.Bank", "pk": 16, "fields": { "description": "CitiBank" } },
+    { "model": "configurations.Bank", "pk": 17, "fields": { "description": "ModalMais" } },
+    { "model": "configurations.Bank", "pk": 18, "fields": { "description": "Banco Inter" } },
+    { "model": "configurations.Bank", "pk": 19, "fields": { "description": "Banco Modal" } },
+    { "model": "configurations.Bank", "pk": 20, "fields": { "description": "XP Investimentos" } }
+]

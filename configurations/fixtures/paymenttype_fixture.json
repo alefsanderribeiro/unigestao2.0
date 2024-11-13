@@ -1,0 +1,5 @@
+[
+    { "model": "configurations.PaymentType", "pk": 1, "fields": { "description": "Mensal" } },
+    { "model": "configurations.PaymentType", "pk": 2, "fields": { "description": "Semanal" } },
+    { "model": "configurations.PaymentType", "pk": 3, "fields": { "description": "Quinzenal" } }
+]

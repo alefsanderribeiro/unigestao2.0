@@ -1,0 +1,44 @@
+[
+    {
+        "model": "configurations.race",
+        "pk": 1,
+        "fields": {
+            "description": "Branca"
+        }
+    },
+    {
+        "model": "configurations.race",
+        "pk": 2,
+        "fields": {
+            "description": "Negro"
+        }
+    },
+    {
+        "model": "configurations.race",
+        "pk": 3,
+        "fields": {
+            "description": "Pardo"
+        }
+    },
+    {
+        "model": "configurations.race",
+        "pk": 4,
+        "fields": {
+            "description": "Indígena"
+        }
+    },
+    {
+        "model": "configurations.race",
+        "pk": 5,
+        "fields": {
+            "description": "Amarelo"
+        }
+    },
+    {
+        "model": "configurations.race",
+        "pk": 6,
+        "fields": {
+            "description": "Mulato"
+        }
+    }
+]

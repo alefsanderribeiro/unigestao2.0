@@ -1,7 +1,10 @@
 from django.db import models
 from employees.models import Employee
 from cbos.models import CBO
-from configurations.models import *
+from configurations.models import (AdmissionType, HarmfulExposure,
+                                   PaymentType, Bank, AccountType,
+                                   PixType)
+
 
 class AdmissionInfo(models.Model):
     employee = models.ForeignKey(Employee, related_name='admission_info', on_delete=models.CASCADE, verbose_name='Funcionário')
@@ -24,14 +27,14 @@ class AdmissionInfo(models.Model):
     inclusion_date = models.DateField(verbose_name="Data de Inclusão do Salário")
 
     # Informações Bancárias
-    bank = models.ForeignKey(Bank,blank=True, null=True, on_delete=models.CASCADE, verbose_name="Banco")
+    bank = models.ForeignKey(Bank, blank=True, null=True, on_delete=models.CASCADE, verbose_name="Banco")
     agency = models.CharField(blank=True, null=True, max_length=10, verbose_name="Agência")
-    account_type = models.ForeignKey(AccountType,blank=True, null=True, on_delete=models.CASCADE, verbose_name="Tipo de Conta")
+    account_type = models.ForeignKey(AccountType, blank=True, null=True, on_delete=models.CASCADE, verbose_name="Tipo de Conta")
     account_number = models.CharField(blank=True, null=True, max_length=20, verbose_name="Nº Conta")
     check_digit = models.CharField(blank=True, null=True, max_length=5, verbose_name="Dígito Verificador")
     operation = models.CharField(max_length=10, null=True, blank=True, verbose_name="Operação")
     pix = models.CharField(max_length=50, null=True, blank=True, verbose_name="PIX")
-    pix_type = models.ForeignKey(PixType,blank=True, null=True, on_delete=models.CASCADE, verbose_name="Tipo de PIX")
+    pix_type = models.ForeignKey(PixType, blank=True, null=True, on_delete=models.CASCADE, verbose_name="Tipo de PIX")
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Criado em')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Editado em')

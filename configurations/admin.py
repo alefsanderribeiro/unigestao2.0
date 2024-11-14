@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import *
+from .models import (AdmissionType, HarmfulExposure, PaymentType, Bank,
+                     AccountType, PixType, Gender, Race, MaritalStatus,
+                     DegreeInstruction, Deficiency, Nationality)
+
 
 @admin.register(AdmissionType)
 class AdmissionTypeAdmin(admin.ModelAdmin):
@@ -8,12 +11,14 @@ class AdmissionTypeAdmin(admin.ModelAdmin):
     list_filter = ('description',)
     ordering = ('description',)
 
+
 @admin.register(HarmfulExposure)
 class HarmfulExposureAdmin(admin.ModelAdmin):
     list_display = ('description',)
     search_fields = ('description',)
     list_filter = ('description',)
     ordering = ('description',)
+
 
 @admin.register(PaymentType)
 class PaymentTypeAdmin(admin.ModelAdmin):
@@ -22,6 +27,7 @@ class PaymentTypeAdmin(admin.ModelAdmin):
     list_filter = ('description',)
     ordering = ('description',)
 
+
 @admin.register(Bank)
 class BankAdmin(admin.ModelAdmin):
     list_display = ('description',)
@@ -29,12 +35,14 @@ class BankAdmin(admin.ModelAdmin):
     list_filter = ('description',)
     ordering = ('description',)
 
+
 @admin.register(AccountType)
 class AccountTypeAdmin(admin.ModelAdmin):
     list_display = ('description',)
     search_fields = ('description',)
     list_filter = ('description',)
     ordering = ('description',)
+
 
 @admin.register(PixType)
 class PixTypeAdmin(admin.ModelAdmin):

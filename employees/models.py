@@ -1,6 +1,9 @@
 from django.db import models
 from geography.models import State, City
-from configurations.models import *
+from configurations.models import (Gender, Race, MaritalStatus,
+                                   DegreeInstruction, Deficiency,
+                                   Nationality)
+
 
 class Employee(models.Model):
     # Dados Pessoais

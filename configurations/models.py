@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Gender(models.Model):
     description = models.CharField(max_length=20, verbose_name='Descrição')
 
@@ -17,7 +18,7 @@ class Race(models.Model):
     class Meta:
         verbose_name = 'Raça'
         verbose_name_plural = 'Raça'
-        
+
     def __str__(self):
         return self.description
 
@@ -28,7 +29,7 @@ class MaritalStatus(models.Model):
     class Meta:
         verbose_name = 'Estado Civil'
         verbose_name_plural = 'Estado Civil'
-        
+
     def __str__(self):
         return self.description
 
@@ -39,7 +40,7 @@ class DegreeInstruction(models.Model):
     class Meta:
         verbose_name = 'Grau de Instrução'
         verbose_name_plural = 'Grau de Instrução'
-        
+
     def __str__(self):
         return self.description
 
@@ -50,7 +51,7 @@ class Deficiency(models.Model):
     class Meta:
         verbose_name = 'Deficiência'
         verbose_name_plural = 'Deficiência'
-        
+
     def __str__(self):
         return self.description
 
@@ -61,7 +62,7 @@ class Nationality(models.Model):
     class Meta:
         verbose_name = 'Nacionalidade'
         verbose_name_plural = 'Nacionalidade'
-        
+
     def __str__(self):
         return self.description
 

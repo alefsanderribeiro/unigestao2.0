@@ -168,11 +168,10 @@ JAZZMIN_SETTINGS = {
         'auth.user': 'fas fa-user',
         'auth.Group': 'fas fa-users',
 
-        # App Employees
+        # App 'employees'
         'employees.Employee': 'fa-solid fa-address-book',
 
-
-        # App Geography
+        # App 'geography'
         'geography.City': 'fa-solid fa-tree-city',
         'geography.State': 'fa-solid fa-map',
         'geography.Country': 'fa-solid fa-earth-americas',
@@ -180,12 +179,12 @@ JAZZMIN_SETTINGS = {
         'geography.Capital': 'fa-solid fa-city',
 
         # App 'configurations'
-        'configurations.AdmissionType': 'fa-solid fa-cogs',  # Adiciona um ícone ao modelo
-        'configurations.HarmfulExposure': 'fa-solid fa-biohazard',  # Exemplo de ícone
-        'configurations.PaymentType': 'fa-solid fa-credit-card',  # Ícone para Tipo de Pagamento
-        'configurations.Bank': 'fa-solid fa-university',  # Ícone para Banco
-        'configurations.AccountType': 'fa-solid fa-wallet',  # Ícone para Tipo de Conta
-        'configurations.PixType': 'fa-solid fa-qrcode',  # Ícone para Tipo de Pix
+        'configurations.AdmissionType': 'fa-solid fa-cogs',
+        'configurations.HarmfulExposure': 'fa-solid fa-biohazard',
+        'configurations.PaymentType': 'fa-solid fa-credit-card',
+        'configurations.Bank': 'fa-solid fa-university',
+        'configurations.AccountType': 'fa-solid fa-wallet',
+        'configurations.PixType': 'fa-solid fa-qrcode',
         'configurations.MaritalStatus': 'fa-solid fa-hand-holding-heart',
         'configurations.Deficiency': 'fa-solid fa-wheelchair',
         'configurations.DegreeInstruction': 'fa-solid fa-file-contract',
@@ -240,7 +239,7 @@ JAZZMIN_SETTINGS = {
             "icon": "fas fa-briefcase",
 
             # uma lista de permissões que o usuário deve ter para ver este link (opcional)
-            # "permissions": ["bond.view_admissioninfo"]     
+            # "permissions": ["bond.view_admissioninfo"]
         }]
     },
 

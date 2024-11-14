@@ -59,7 +59,7 @@ Aqui estão algumas imagens que ilustram o processo de cadastro de funcionários
 
 ![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/listagem_funcionarios.png)
 
-## Formulário Para Cadastrar Vínculo Empregatício
+### Formulário Para Cadastrar Vínculo Empregatício
 
 ![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/vinculo.png)
 

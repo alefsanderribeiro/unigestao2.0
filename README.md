@@ -37,16 +37,35 @@ Este é o **Uni Gestão**, um sistema web desenvolvido com Django para gerenciar
 
 Aqui estão algumas imagens que ilustram o processo de cadastro de funcionários na aplicação.
 
-### Formulário de Cadastro
+### Dashboard
 
-![Formulário de Cadastro de Funcionários](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/formulario_1.png)
+![Formulário de Cadastro de Funcionários Dados Pessoais](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/dashboard.png)
 
-![Formulário de Cadastro de Funcionários](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/formulario_2.png)
+### Formulário de Cadastro de Funcionários
+
+![Formulário de Cadastro de Funcionários Dados Pessoais](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_01.png)
+
+![Formulário de Cadastro de Funcionários Naturalidade](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_02.png)
+
+![Formulário de Cadastro de Funcionários Documentos](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_03.png)
+
+![Formulário de Cadastro de Funcionários Carteira de Trabalho](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_04.png)
+
+![Formulário de Cadastro de Funcionários Naturalidade Dados Complementares](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_05.png)
+
+![Formulário de Cadastro de Funcionários Contato](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/cadastro_funcionarios_06.png)
 
 ### Exemplo de Funcionário Cadastrado
 
-![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/employees/tela_listagem.png)
+![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/listagem_funcionarios.png)
 
+## Formulário Para Cadastrar Vínculo Empregatício
+
+![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/vinculo.png)
+
+### Exemplo de Vínculo Empregatício
+
+![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/listagem_vinculos.png)
 
 ## Ferramentas utilizadas
 
@@ -176,29 +195,28 @@ Se você optar por usar o PostgreSQL com Docker, basta definir as variáveis de 
     python manage.py migrate
     ```
 
-8. População de Dados Cadastrais:
+8. População de Dados Cadastrais e Vínculo Empregatício:
    
     População para Gênero, Raça, Estado Civil, Deficiência, Grau de Instrução e Nacionalidade:
 
       ```
-      python manage.py loaddata employees/fixtures/gender.json
-      python manage.py loaddata employees/fixtures/race.json
-      python manage.py loaddata employees/fixtures/maritalstatus.json
-      python manage.py loaddata employees/fixtures/deficiency.json
-      python manage.py loaddata employees/fixtures/degreeinstruction.json
-      python manage.py loaddata employees/fixtures/nationality.json
+      python manage.py loaddata configurations/fixtures/*.json
       ```
+
+9. População de Dados CBOs:
+
+    População para CBOs, Ocupação e Sinônimos:
+
+     ```
+     python manage.py loaddata cbos/fixtures/*.json
+     ```
 
 10. População de Dados Geográficos:
 
     População para Países, Estados, Capitais, Cidades e Região:
 
      ```
-     python manage.py loaddata geography/fixtures/0_pais.json
-     python manage.py loaddata geography/fixtures/1_estados.json
-     python manage.py loaddata geography/fixtures/2_capitais.json
-     python manage.py loaddata geography/fixtures/3_cidades.json
-     python manage.py loaddata geography/fixtures/4_regiao.json
+     python manage.py loaddata geography/fixtures/*.json
      ```
 
 

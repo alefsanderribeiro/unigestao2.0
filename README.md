@@ -18,6 +18,7 @@
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Acesso ao projeto](#acesso-ao-projeto)
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+- [Acesso Inicial e Recomendações de Segurança](#acesso-inicial-e-recomendações-de-segurança)
 - [Próximas Etapas](#próximas-etapas)
 - [Desenvolvedores](#desenvolvedores)
 
@@ -227,6 +228,16 @@ Se você optar por usar o PostgreSQL com Docker, basta definir as variáveis de 
     ```
 
 12. Acesse a aplicação em seu navegador em [http://localhost:8000](http://localhost:8000).
+
+## Acesso Inicial e Recomendações de Segurança
+
+Assim que o sistema estiver rodando, **é necessário acessar com um superusuário** para configurar o sistema. Para evitar que usuários regulares possam apagar dados sensíveis ou realizar alterações indevidas, recomenda-se a criação de grupos com permissões específicas.
+
+### Recomendações de Grupos de Usuários
+
+- **Usuário de Nível 1**: Este grupo terá acesso apenas aos apps `employees` e `bond`, que são responsáveis pelo gerenciamento de funcionários e vínculos. Usuários desse grupo podem visualizar e acessar esses dados sem riscos de interferir em outras configurações do sistema.
+
+Esta organização ajuda a proteger os dados, garantindo que o sistema seja utilizado de forma mais segura e eficiente, especialmente em ambientes com múltiplos usuários.
 
 ## Próximas Etapas
 

@@ -156,6 +156,13 @@ JAZZMIN_SETTINGS = {
     # Título na marca (máximo de 19 caracteres) (padrão é current_admin_site.site_header se ausente ou None)
     'site_brand': 'Uni Gestão (SGP)',
 
+    # Logo to use for your site, must be present in static files, used for brand on top left
+    "site_logo": '/image/icons/gestao_site.png',
+    # <a href="https://www.flaticon.com/br/icones-gratis/ideia" title="idéia ícones">Idéia ícones criados por geotatah - Flaticon</a>
+
+    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": '/image/icons/gestao_login.png',
+
     'icons': {
         'auth': 'fas fa-users-cog',
         'auth.user': 'fas fa-user',
@@ -166,11 +173,13 @@ JAZZMIN_SETTINGS = {
 
 
         # App Geography
-        'geography.City': 'fa-solid fa-city',
-        'geography.State': 'fa-solid fa-compass',
+        'geography.City': 'fa-solid fa-tree-city',
+        'geography.State': 'fa-solid fa-map',
         'geography.Country': 'fa-solid fa-earth-americas',
+        'geography.Region': 'fa-solid fa-compass',
+        'geography.Capital': 'fa-solid fa-city',
 
-        # App 'configurations' (exemplo para os modelos que você deseja agrupar)
+        # App 'configurations'
         'configurations.AdmissionType': 'fa-solid fa-cogs',  # Adiciona um ícone ao modelo
         'configurations.HarmfulExposure': 'fa-solid fa-biohazard',  # Exemplo de ícone
         'configurations.PaymentType': 'fa-solid fa-credit-card',  # Ícone para Tipo de Pagamento
@@ -182,6 +191,11 @@ JAZZMIN_SETTINGS = {
         'configurations.DegreeInstruction': 'fa-solid fa-file-contract',
         'configurations.Nationality': 'fa-solid fa-earth-americas',
         'configurations.Race': 'fa-solid fa-hands-holding-circle',
+        'configurations.Gender': 'fa-solid fa-venus-mars',
+
+        # App 'cbos'
+        'cbos.CBO': 'fa-solid fa-file-shield',
+        'cbos.Occupation': 'fa-solid fa-file-lines',
     },
 
     # Texto de boas-vindas na tela de login

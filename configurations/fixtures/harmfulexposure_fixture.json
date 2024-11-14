@@ -6,5 +6,6 @@
     { "model": "configurations.HarmfulExposure", "pk": 5, "fields": { "description": "Temperaturas Extremas" } },
     { "model": "configurations.HarmfulExposure", "pk": 6, "fields": { "description": "Vibrações" } },
     { "model": "configurations.HarmfulExposure", "pk": 7, "fields": { "description": "Micro-organismos" } },
-    { "model": "configurations.HarmfulExposure", "pk": 8, "fields": { "description": "Fumaça" } }
+    { "model": "configurations.HarmfulExposure", "pk": 8, "fields": { "description": "Fumaça" } },
+    { "model": "configurations.HarmfulExposure", "pk": 9, "fields": { "description": "Não Exposto" } }
 ]

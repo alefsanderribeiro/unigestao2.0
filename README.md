@@ -84,8 +84,8 @@ Você pode [acessar o código fonte do projeto](https://github.com/MarcosSerra1/
 
 ### Versões recomendadas
 
-- Python 3.x
-- Django 4.x
+- Python 3.11
+- Django 5.1
 
 ### Passos para rodar o projeto localmente:
 

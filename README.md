@@ -14,10 +14,11 @@
 
 - [Descrição do projeto](#descrição-do-projeto)
 - [Funcionalidades](#funcionalidades)
-- [Cadastro de Funcionários (com as imagens)](#cadastro-de-funcionários)
+- [Cadastro de Funcionários e Vínculo Empregatício](#cadastro-de-funcionários)
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Acesso ao projeto](#acesso-ao-projeto)
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+- [Próximas Etapas](#próximas-etapas)
 - [Desenvolvedores](#desenvolvedores)
 
 ## Descrição do projeto
@@ -219,14 +220,23 @@ Se você optar por usar o PostgreSQL com Docker, basta definir as variáveis de 
      python manage.py loaddata geography/fixtures/*.json
      ```
 
-
-10. Inicie o servidor:
+11. Inicie o servidor:
 
     ```
     python manage.py runserver
     ```
 
-11. Acesse a aplicação em seu navegador em [http://localhost:8000](http://localhost:8000).
+12. Acesse a aplicação em seu navegador em [http://localhost:8000](http://localhost:8000).
+
+## Próximas Etapas
+
+Abaixo estão os recursos e melhorias planejados para a próxima fase de desenvolvimento do Uni Gestão:
+
+- **Gerenciamento de Pagamentos**: Criação de um app para controlar pagamentos, com funcionalidades para identificar se estão feitos, atrasados, ou adiantados, visando melhor controle financeiro.
+
+- **Geração Automática de Contratos**: Desenvolvimento de uma ferramenta para criar contratos personalizados, que serão armazenados e gerenciados diretamente no sistema, automatizando processos e evitando trabalho manual repetitivo.
+
+Essas etapas serão implementadas progressivamente para aprimorar a funcionalidade e a experiência do usuário.
 
 ## Desenvolvedores
 

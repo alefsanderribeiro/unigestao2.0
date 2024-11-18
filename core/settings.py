@@ -2,20 +2,28 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# ------------------------------------------------------------
+# BASE SETTINGS
+# ------------------------------------------------------------
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Carregar variáveis de ambiente
+load_dotenv()
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%)eo!m%!t7r=x5uo$i52^au_$e-r7d-7%1wk9&y+5#*y+=&swb'
+# Chave secreta
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'chave-secreta-de-desenvolvimento')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Modo de depuração
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+# Hosts permitidos
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
 
 
-# Application definition
+# ------------------------------------------------------------
+# APPLICATION DEFINITION
+# ------------------------------------------------------------
 
 INSTALLED_APPS = [
     # App de Interface
@@ -51,9 +59,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            'base_templates'
-        ],
+        'DIRS': ['base_templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,13 +75,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# ------------------------------------------------------------
+# DATABASES
+# ------------------------------------------------------------
 
-DOCKER_MODE = False  # Altere para False para usar SQLite
+# Altere para False no .env para usar SQLite
+DOCKER_MODE = os.getenv('DOCKER_MODE', 'False') == 'True'
 
 if DOCKER_MODE:
-    load_dotenv()
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -94,187 +101,60 @@ else:
         }
     }
 
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
+
+# ------------------------------------------------------------
+# PASSWORD VALIDATION
+# ------------------------------------------------------------
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'
     },
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
+# ------------------------------------------------------------
+# INTERNATIONALIZATION
+# ------------------------------------------------------------
 
 LANGUAGE_CODE = 'pt-br'
-
 TIME_ZONE = 'America/Sao_Paulo'
-
 USE_I18N = True
-
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
+# ------------------------------------------------------------
+# STATIC AND MEDIA FILES
+# ------------------------------------------------------------
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_DIRS = ['static',]
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, './media')
 MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
-THOUSAND_SEPARATOR = '.',
+# ------------------------------------------------------------
+# JAZZMIN CONFIGURATION
+# ------------------------------------------------------------
+
+from core.jazzmin_config import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS  # Centralizado em outro arquivo
+
+
+# ------------------------------------------------------------
+# MISCELLANEOUS SETTINGS
+# ------------------------------------------------------------
+
+THOUSAND_SEPARATOR = '.'
 USE_THOUSAND_SEPARATOR = True
-
-
-JAZZMIN_SETTINGS = {
-    # título da janela (Será o valor padrão de current_admin_site.site_title se ausente ou None)
-    'site_title': 'SGP',
-
-    # Título na tela de login (máximo de 19 caracteres) (padrão é current_admin_site.site_header se ausente ou None)
-    'site_header': 'Uni Gestão',
-
-    # Título na marca (máximo de 19 caracteres) (padrão é current_admin_site.site_header se ausente ou None)
-    'site_brand': 'Uni Gestão (SGP)',
-
-    # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": '/image/icons/gestao_site.png',
-    # <a href="https://www.flaticon.com/br/icones-gratis/ideia" title="idéia ícones">Idéia ícones criados por geotatah - Flaticon</a>
-
-    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": '/image/icons/gestao_login.png',
-
-    'icons': {
-        'auth': 'fas fa-users-cog',
-        'auth.user': 'fas fa-user',
-        'auth.Group': 'fas fa-users',
-
-        # App 'employees'
-        'employees.Employee': 'fa-solid fa-address-book',
-
-        # App 'geography'
-        'geography.City': 'fa-solid fa-tree-city',
-        'geography.State': 'fa-solid fa-map',
-        'geography.Country': 'fa-solid fa-earth-americas',
-        'geography.Region': 'fa-solid fa-compass',
-        'geography.Capital': 'fa-solid fa-city',
-
-        # App 'configurations'
-        'configurations.AdmissionType': 'fa-solid fa-cogs',
-        'configurations.HarmfulExposure': 'fa-solid fa-biohazard',
-        'configurations.PaymentType': 'fa-solid fa-credit-card',
-        'configurations.Bank': 'fa-solid fa-university',
-        'configurations.AccountType': 'fa-solid fa-wallet',
-        'configurations.PixType': 'fa-solid fa-qrcode',
-        'configurations.MaritalStatus': 'fa-solid fa-hand-holding-heart',
-        'configurations.Deficiency': 'fa-solid fa-wheelchair',
-        'configurations.DegreeInstruction': 'fa-solid fa-file-contract',
-        'configurations.Nationality': 'fa-solid fa-earth-americas',
-        'configurations.Race': 'fa-solid fa-hands-holding-circle',
-        'configurations.Gender': 'fa-solid fa-venus-mars',
-
-        # App 'cbos'
-        'cbos.CBO': 'fa-solid fa-file-shield',
-        'cbos.Occupation': 'fa-solid fa-file-lines',
-    },
-
-    # Texto de boas-vindas na tela de login
-    'welcome_sign': 'Bem-vindo(a) ao Uni Gestão (SGP)',
-
-    # Copyright no rodapé
-    'copyright': 'Coding Solutions LTDA',
-
-    # Lista de administradores de modelos a serem pesquisados na barra de pesquisa, barra de pesquisa será omitida se excluída
-    'search_model': ['employees.Funcionario',],
-
-    # Se deve mostrar o personalizador de UI na barra lateral
-    # 'show_ui_builder': True,
-
-    # Ordenação de modelos
-    'order_with_respect_to': [
-        'auth',  # Coloca o app 'auth' no topo
-        'employees',  # Coloca o app 'employees' após 'auth'
-        'bond',
-        'configurations',
-        'configurations.bank',  # Dentro do app 'configurations', ordena os modelos
-        'configurations.accounttype',  # Dentro do app 'configurations', ordena os modelos
-        'configurations.paymenttype',  # Dentro do app 'configurations', ordena os modelos
-        'configurations.pixtype',  # Dentro do app 'configurations', ordena os modelos
-    ],
-
-    # apps não listados
-    # "hide_apps": ['geography',],
-
-    # models não listados
-    "hide_models": ['bond.AdmissionInfo'],
-
-    "custom_links": {
-        "bond": [{
-            # Qualquer nome que você preferir
-            "name": "Gerenciar Vinculo",
-
-            # nome da URL, ex: `admin:index`, URLs relativas, ex: `/admin/index` ou URLs absolutas, ex: `https://domain.com/admin/index`
-            "url": "admin:bond_admissioninfo_changelist",
-
-            # qualquer ícone do Font Awesome, veja a lista aqui https://fontawesome.com/icons?d=gallery&m=free&v=5.0.0,5.0.1,5.0.10,5.0.11,5.0.12,5.0.13,5.0.2,5.0.3,5.0.4,5.0.5,5.0.6,5.0.7,5.0.8,5.0.9,5.1.0,5.1.1,5.2.0,5.3.0,5.3.1,5.4.0,5.4.1,5.4.2,5.13.0,5.12.0,5.11.2,5.11.1,5.10.0,5.9.0,5.8.2,5.8.1,5.7.2,5.7.1,5.7.0,5.6.3,5.5.0,5.4.2 (opcional)
-            "icon": "fas fa-briefcase",
-
-            # uma lista de permissões que o usuário deve ter para ver este link (opcional)
-            # "permissions": ["bond.view_admissioninfo"]
-        }]
-    },
-
-}
-
-
-JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": False,
-    "brand_small_text": False,
-    "brand_colour": False,
-    "accent": "accent-primary",
-    "navbar": "navbar-white navbar-light",
-    "no_navbar_border": False,
-    "navbar_fixed": True,
-    "layout_boxed": False,
-    "footer_fixed": True,
-    "sidebar_fixed": True,
-    "sidebar": "sidebar-dark-primary",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": False,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": False,
-    "theme": "default",
-    "dark_mode_theme": None,
-    "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
-        "info": "btn-info",
-        "warning": "btn-warning",
-        "danger": "btn-danger",
-        "success": "btn-success"
-    },
-    "actions_sticky_top": True
-}
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

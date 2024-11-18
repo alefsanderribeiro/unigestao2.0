@@ -4,12 +4,16 @@
 echo "Rodando migrações..."
 python manage.py migrate
 
+# Coletar arquivos estáticos
+echo "🟡 Coletando arquivos estáticos..."
+python manage.py collectstatic --noinput
+
 # Carregar dados dos fixtures
-echo "Carregando fixtures de cbos..."
+echo "🟡 Carregando fixtures de cbos..."
 python manage.py loaddata cbos/fixtures/*.json
-echo "Carregando fixtures de configurations..."
+echo "🟡 Carregando fixtures de configurations..."
 python manage.py loaddata configurations/fixtures/*.json
-echo "Carregando fixtures de geography..."
+echo "🟡 Carregando fixtures de geography..."
 python manage.py loaddata geography/fixtures/*.json
 
 # Criar superusuário se não existir
@@ -26,5 +30,5 @@ if not User.objects.filter(username="${DJANGO_SUPERUSER_USERNAME}").exists():
 EOF
 
 # Iniciar o servidor
-echo "Iniciando servidor Django..."
+echo "🟢 Iniciando servidor Django..."
 python manage.py runserver 0.0.0.0:8000

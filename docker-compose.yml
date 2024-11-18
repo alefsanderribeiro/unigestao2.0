@@ -20,7 +20,18 @@ services:
       - "8000:8000"
     depends_on:
       - db
-    command: sh -c "./scripts/entrypoint.sh"  # Comando para deixar o script excutavel (chmod +x scripts/entrypoint.sh)
+    # Comando para deixar o script excutavel (chmod +x scripts/entrypoint.sh)
+    command: sh -c "./scripts/entrypoint.sh"
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./static:/app/static
+    depends_on:
+      - sgp-app-web
 
 volumes:
   postgres_data:

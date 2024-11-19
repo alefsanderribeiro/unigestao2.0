@@ -5,7 +5,7 @@
   
   Gerencie informações de funcionários, fornecedores e clientes de forma eficiente e segura.
   
-  ![Badge Licença](https://badgen.net/static/license/MIT/green)  ![Badge em Desenvolvimento](https://badgen.net/static/status/EM%20DESENVOLVIMENTO/yellow)
+  ![Badge Licença](https://badgen.net/static/license/MIT/green)  ![Badge em Desenvolvimento](https://badgen.net/static/status/EM%20DESENVOLVIMENTO/yellow) ![Badge Versão](https://badgen.net/static/versão/2.0.0/orange)
 </div>
 
 ### Tópicos

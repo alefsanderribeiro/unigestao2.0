@@ -8,10 +8,19 @@ check_command() {
     fi
 }
 
+# Criar migrações
+echo "🟡 Criando migrações..."
+python manage.py makemigrations
+check_command "makemigrations"
+
 # Rodar migrações
 echo "🟡 Rodando migrações..."
 python manage.py migrate
 check_command "migrações"
+
+# Coletar Arquivos Staticos
+echo "🟡 Coletando arquivos estaticos..."
+python manage.py collectstatic --noinput
 
 # Carregar dados dos fixtures
 echo "🟡 Carregando fixtures de cbos..."
@@ -50,7 +59,12 @@ echo "🟡 Verificando e criando grupo de usuário de nível 1..."
 python manage.py create_groups
 check_command "criação do grupo de usuário de nível 1"
 
+# Iniciando o servidor gunicorn
+echo "🟢 Iniciando servidor Gunicorn..."
+gunicorn core.wsgi:application --bind 0.0.0.0:8000
+check_command "início do servidor Gunicorn"
+
 # Iniciar o servidor
-echo "🟢 Iniciando servidor Django..."
-python manage.py runserver 0.0.0.0:8000
-check_command "início do servidor Django"
+# echo "🟢 Iniciando servidor Django..."
+# python manage.py runserver 0.0.0.0:8000
+# check_command "início do servidor Django"

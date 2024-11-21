@@ -122,7 +122,7 @@ Se você optar por usar o PostgreSQL com Docker, basta definir as variáveis de 
     docker-compose up --build
     ```
 
-6. O Docker irá construir a imagem, configurar o banco de dados e iniciar o servidor Django. Você pode acessar a aplicação em seu navegador em [http://localhost:8000](http://localhost:8000).
+6. O Docker irá construir a imagem, configurar o banco de dados e iniciar o servidor Django. Você pode acessar a aplicação em seu navegador em [http://localhost](http://localhost).
 
 ---
 

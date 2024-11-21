@@ -1,6 +1,5 @@
-from dotenv import load_dotenv
+from decouple import config
 from pathlib import Path
-import os
 
 # ------------------------------------------------------------
 # BASE SETTINGS
@@ -8,17 +7,15 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Carregar variáveis de ambiente
-load_dotenv()
 
 # Chave secreta
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'chave-secreta-de-desenvolvimento')
+SECRET_KEY = config('DJANGO_SECRET_KEY', '')
 
 # Modo de depuração
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 # Hosts permitidos
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', '*').split(',')
 
 
 # ------------------------------------------------------------
@@ -80,17 +77,17 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # ------------------------------------------------------------
 
 # Altere para False no .env para usar SQLite
-DOCKER_MODE = os.getenv('DOCKER_MODE', 'False') == 'True'
+DOCKER_MODE = config('DOCKER_MODE', default=False, cast=bool)
 
 if DOCKER_MODE:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST'),
-            'PORT': os.getenv('DB_PORT'),
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': config('DB_PORT'),
         }
     }
 else:

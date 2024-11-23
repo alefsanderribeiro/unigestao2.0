@@ -36,6 +36,9 @@ class AdmissionInfo(models.Model):
     pix = models.CharField(max_length=50, null=True, blank=True, verbose_name="PIX")
     pix_type = models.ForeignKey(PixType, blank=True, null=True, on_delete=models.CASCADE, verbose_name="Tipo de PIX")
 
+    # Informações de demissão
+    dismissal_date = models.DateField(blank=True, null=True, verbose_name="Data de Demissão")
+
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Criado em')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Editado em')
 

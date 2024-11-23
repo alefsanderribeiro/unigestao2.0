@@ -15,18 +15,24 @@ JAZZMIN_SETTINGS = {
         'auth',
         'employees',
         'bond',
+        'payroll',
         'configurations',
         'configurations.bank',
         'configurations.accounttype',
         'configurations.paymenttype',
         'configurations.pixtype',
     ],
-    'hide_models': ['bond.AdmissionInfo'],
+    'hide_models': ['bond.AdmissionInfo', 'payroll.Payment'],
     'custom_links': {
         'bond': [{
             'name': 'Gerenciar Vinculo',
             'url': 'admin:bond_admissioninfo_changelist',
             'icon': 'fas fa-briefcase',
+        }],
+        'payroll': [{
+            'name': 'Gerenciar Pagamento',
+            'url': 'admin:payroll_payment_changelist',
+            'icon': 'fa-solid fa-cash-register',
         }]
     },
     'icons': {

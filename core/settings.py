@@ -15,7 +15,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY', '')
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 # Hosts permitidos
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*').split(',')
 
 
 # ------------------------------------------------------------

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'cbos',
     'bond',
     'configurations',
+    'payroll',
 ]
 
 MIDDLEWARE = [

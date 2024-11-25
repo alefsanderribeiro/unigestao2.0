@@ -7,7 +7,7 @@ from configurations.models import (AdmissionType, HarmfulExposure,
 
 
 class AdmissionInfo(models.Model):
-    employee = models.ForeignKey(Employee, related_name='admission_info', on_delete=models.CASCADE, verbose_name='Funcionário')
+    employee = models.OneToOneField(Employee, related_name='admission_info', on_delete=models.CASCADE, verbose_name='Funcionário')
     cbo = models.ForeignKey(CBO, related_name='admission_info', on_delete=models.CASCADE, verbose_name='CBO')
     admission_type = models.ForeignKey(AdmissionType, on_delete=models.CASCADE, verbose_name='Tipo de Admissão')
     harmful_exposure = models.ForeignKey(HarmfulExposure, on_delete=models.CASCADE, verbose_name='Exposição a Agentes Nocivos')
@@ -43,7 +43,7 @@ class AdmissionInfo(models.Model):
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Editado em')
 
     def __str__(self):
-        return f"{self.employee} - Admissão em {self.admission_date}"
+        return f"{self.employee} - Admissão em {self.admission_date} - Cargo {self.position_01}"
 
     class Meta:
         verbose_name = 'Informação de Admissão'

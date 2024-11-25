@@ -74,6 +74,56 @@ Após o cadastro, os funcionários podem ser visualizados em uma lista:
 
 ![Funcionário Cadastrado](https://github.com/MarcosSerra1/unigestao2.0/blob/main/static/image/imagens_sistema/listagem_funcionarios.png)
 
+## Gerenciamento de Vínculos (Bond)
+
+O app **Bond** foi criado para gerenciar os vínculos empregatícios de forma eficiente, centralizando informações sobre contratos, cargos e relações trabalhistas. Ele é essencial para organizar os dados estruturais que impactam diretamente em outros apps, como **Employees** e **Payroll**.
+
+### Principais Funcionalidades
+
+- **Cadastro de Vínculos**: Permite registrar os vínculos empregatícios de cada funcionário, incluindo cargo, data de início, e término (se aplicável).
+- **Histórico de Vínculos**: Acompanhe todas as alterações de vínculos ao longo do tempo, garantindo rastreabilidade.
+- **Relação com Cargos**: Integra-se com o app **Employees** para vincular cargos e outras informações relevantes de cada funcionário.
+<!-- - **Gerenciamento de Contratos**: Facilita a geração e o controle de contratos de trabalho personalizados para cada vínculo. (**EM DESENVOLVIMENTO**) -->
+
+### Benefícios do App Bond
+
+- **Organização Centralizada**: Agrupa as informações sobre vínculos em um único local, simplificando a gestão.
+- **Integração com Outros Apps**: Proporciona dados consistentes para os app **Payroll**, automatizando processos e reduzindo erros.
+<!-- - **Flexibilidade nos Contratos**: Gera contratos específicos para cada funcionário, atendendo às demandas legais e organizacionais. -->
+
+### Como Usar
+
+1. **Cadastro Inicial**: Adicione os vínculos de cada funcionário com os respectivos cargos e datas.
+2. **Atualizações de Vínculo**: Registre alterações de cargo ou término de vínculo diretamente pelo painel administrativo.
+<!-- 3. **Geração de Contratos**: Utilize as ferramentas do app para criar contratos baseados nos dados cadastrados.(**EM DESENVOLVIMENTO**) -->
+
+> **Nota:** O app é parte fundamental do sistema e é projetado para ser ampliado com novas funcionalidades de acordo com as necessidades do projeto.
+
+## Gerenciamento de Pagamentos (Payroll)
+
+O app **Payroll** foi criado para gerenciar os pagamentos de funcionários de forma eficiente e flexível. Ele centraliza as informações relacionadas a salários, adiantamentos e histórico de pagamentos, garantindo que todas as transações financeiras estejam organizadas e acessíveis.
+
+### Principais Funcionalidades
+
+- **Controle de Salários**: Gerencie o pagamento de salários com base nas informações de vínculo empregatício e cargo.
+- **Adiantamentos**: Permite a solicitação e o gerenciamento de adiantamentos salariais, com impacto direto no cálculo dos pagamentos.
+- **Histórico de Pagamentos**: Acompanhe o histórico completo de pagamentos realizados para cada funcionário, incluindo valores, datas e adiantamentos relacionados.
+<!-- - **Relatórios de Pagamento**: Gere relatórios detalhados para auditorias, controle interno ou consulta. -->
+
+### Benefícios do App Payroll
+
+- **Automação de Cálculos**: Reduza erros manuais com a automação dos cálculos salariais e deduções.
+- **Centralização de Informações**: Todas as transações financeiras relacionadas a funcionários em um único local.
+- **Integração com Outros Apps**: Integra-se com os apps **Employees** e **Bond**, garantindo que as informações de cargos e vínculos estejam sempre atualizadas.
+
+### Como Usar
+
+1. **Configurações Iniciais**: Certifique-se de que os dados de vínculo e cargos dos funcionários estejam preenchidos nos apps `bond`.
+2. **Adiantamentos**: Solicite e registre adiantamentos diretamente pelo painel administrativo.
+3. **Pagamentos**: Registre os pagamentos mensais e acompanhe o impacto de adiantamentos no saldo final.
+
+> **Nota:** O app está projetado para expandir com futuras funcionalidades, como geração de recibos.
+
 ## Ferramentas Utilizadas
 
 - **Django**: Framework principal para desenvolvimento web.

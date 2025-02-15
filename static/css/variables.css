@@ -1,0 +1,22 @@
+:root {
+    --font-family-primary: "Poppins", sans-serif;
+
+    --color-background: rgb(2, 48, 71);
+    --color-line: #c2c2c2;
+
+    --primary-color-blue: rgb(3, 4, 94);
+    --second-color-blue: rgb(2, 62, 138);
+    --third-color-blue: rgb(0, 119, 182);
+    --fourth-color-blue: rgb(0, 150, 199);
+    --fifth-color-blue: rgb(0, 180, 216);
+    --sixth-color-blue: rgb(72, 202, 228);
+    --seventh-color-blue: rgb(202, 240, 248);
+
+    --primary-color-red: rgb(157, 2, 8);
+    --second-color-red: rgb(208, 0, 0);
+    --third-color-red: rgb(220, 47, 2);
+    --fourth-color-red: rgb(232, 93, 4);
+
+    --primary-color-yellow: rgb(251, 133, 0);
+    --second-color-yellow: rgb(255, 183, 3);
+}

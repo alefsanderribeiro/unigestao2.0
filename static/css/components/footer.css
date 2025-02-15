@@ -1,0 +1,15 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid var(--color-line);
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+.footer-container .footer {
+    font-weight: bold;
+    margin-right: 5px;
+}

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Definindo áreas especificas para elementos do layout */
+.header-container-flex {
+    grid-area: cabecalho;
+}
+
+.nav-container {
+    grid-area: navegacao;
+}
+
+.main-container {
+    grid-area: conteudo;
+}
+
+.footer-container {
+    grid-area: rodape;
+}
+
+.body-container-grid {
+    display: grid;
+    min-height: 100vh;
+
+    /* Layout da grade principal */
+    /* Primeira coluna: largura fixa de 300px, segunda coluna ocupa o restante da tela */
+    grid-template-columns: 250px 1fr;
+
+    /* Primeira linha: altura de 100px, segunda linha ocupa o restante e a terceira tem 100px */
+    grid-template-rows: 75px 1fr 50px;
+
+    /* Definindo as áreas do layout */
+    grid-template-areas: 
+    'navegacao cabecalho'
+    'navegacao conteudo'
+    'navegacao rodape';
+
+    background-color: #f0f0f5;
+}
+
+.body-container-grid.collapsed {
+    grid-template-columns: 80px 1fr;
+}
+
+body a {
+    text-decoration: none;
+}

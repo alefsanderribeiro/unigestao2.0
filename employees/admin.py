@@ -2,10 +2,12 @@ import csv
 from django.http import HttpResponse
 from django.contrib import admin
 from .models import Employee
+from .forms import EmployeeFormAdmin
 
 
 @admin.register(Employee)
 class FuncionarioAdm(admin.ModelAdmin):
+    form = EmployeeFormAdmin
     fieldsets = (
         ('Dados Pessoais', {
             'fields': ('full_name', 'gender', 'race', 'marital_status',
@@ -56,3 +58,6 @@ class FuncionarioAdm(admin.ModelAdmin):
 
     export_to_csv.short_description = 'Exportar para CSV'
     actions = [export_to_csv]
+
+    class Media:
+        js = ('js/jquery.mask.min.js', 'js/custom.js', 'js/address.js')

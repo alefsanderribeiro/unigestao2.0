@@ -7,3 +7,4 @@ class EmployeeFormAdmin(forms.ModelForm):
         self.fields['cpf'].widget.attrs['class'] = 'mask-cpf'
         self.fields['telephone'].widget.attrs['class'] = 'mask-telephone'
         self.fields['cep'].widget.attrs['class'] = 'mask-cep'
+        self.fields['contact'].widget.attrs['placeholder'] = 'Nome do contato'

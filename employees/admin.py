@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib import admin
 from .models import Employee
 from .forms import EmployeeFormAdmin
+from file_manager.admin import FileInline
 
 
 @admin.register(Employee)
@@ -43,6 +44,8 @@ class FuncionarioAdm(admin.ModelAdmin):
     search_fields = ('full_name',)
     list_filter = ('is_active',)
     ordering = ('full_name',)
+    inlines = [FileInline]
+
 
     def export_to_csv(self, request, queryset):
         response = HttpResponse(content_type='text/csv')

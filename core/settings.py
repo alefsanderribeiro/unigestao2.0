@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'bond',
     'configurations',
     'payroll',
+    'file_manager',
 ]
 
 MIDDLEWARE = [

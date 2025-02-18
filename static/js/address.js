@@ -4,8 +4,8 @@
             // Limpa valores do formulário de CEP.
             $('#id_complement').val('');  // rua
             $('#id_neighborhood').val('');  // bairro
-            $('#id_city').val('');  // cidade
-            $('#select2-id_address_uf-container').val('');  // estado
+            $('#id_city_address').val('');  // cidade
+            $('#id_address_uf').val('');  // estado
             $('#id_number').val('');  // número
         }
 
@@ -14,8 +14,8 @@
                 // Atualiza os campos com os valores retornados.
                 $('#id_complement').val(conteudo.logradouro);
                 $('#id_neighborhood').val(conteudo.bairro);
-                $('#id_city').val(conteudo.localidade);
-                $('#select2-id_address_uf-container').val(conteudo.uf);
+                $('#id_city_address').val(conteudo.localidade);
+                $('#id_address_uf').val(conteudo.uf);
             } else {
                 // CEP não encontrado.
                 limpa_formulario_cep();
@@ -34,8 +34,8 @@
                     // Preenche os campos com "..." enquanto consulta o webservice.
                     $('#id_complement').val('...');
                     $('#id_neighborhood').val('...');
-                    $('#id_city').val('...');
-                    $('#select2-id_address_uf-container').val('...');
+                    $('#id_city_address').val('...');
+                    $('#id_address_uf').val('...');
 
                     // Faz a chamada para a API ViaCEP.
                     $.getJSON(`https://viacep.com.br/ws/${cep}/json/?callback=?`, meu_callback);

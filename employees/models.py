@@ -40,9 +40,9 @@ class Employee(models.Model):
 
     # Dados complementares
     cep = models.CharField(max_length=10, verbose_name='CEP')
-    address_uf = models.ForeignKey(State, related_name='endereco', on_delete=models.CASCADE, verbose_name='Estado (UF)')
-    city_address = models.ForeignKey(City, related_name='endereco', on_delete=models.CASCADE, verbose_name='Cidade')
-    neighborhood = models.CharField(max_length=50, verbose_name='Bairro')
+    address_uf = models.CharField(max_length=150, verbose_name='Estado (UF)')
+    city_address = models.CharField(max_length=155, verbose_name='Cidade')
+    neighborhood = models.CharField(max_length=100, verbose_name='Bairro')
     number = models.CharField(max_length=10, verbose_name='Número')
     complement = models.CharField(max_length=50, null=True, blank=True, verbose_name='Complemento')
 

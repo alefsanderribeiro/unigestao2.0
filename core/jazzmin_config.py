@@ -15,6 +15,7 @@ JAZZMIN_SETTINGS = {
         'auth',
         'employees',
         'bond',
+        'file_manager',
         'payroll',
         'configurations',
         'configurations.bank',
@@ -67,6 +68,10 @@ JAZZMIN_SETTINGS = {
         # App 'cbos'
         'cbos.CBO': 'fa-solid fa-file-shield',
         'cbos.Occupation': 'fa-solid fa-file-lines',
+
+        # App 'file_manager
+        'file_manager.File': 'fa-solid fa-upload',
+        'file_manager.NameFile': 'fa-solid fa-file-signature',
     },
 }
 

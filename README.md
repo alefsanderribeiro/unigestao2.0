@@ -5,7 +5,7 @@
   
   Gerencie informações de funcionários, fornecedores e clientes de forma eficiente e segura.
   
-  ![Badge Licença](https://badgen.net/static/license/MIT/green)  ![Badge em Desenvolvimento](https://badgen.net/static/status/EM%20DESENVOLVIMENTO/yellow) ![Badge Versão](https://badgen.net/static/versão/2.0.0/orange)
+  ![Badge Licença](https://badgen.net/static/license/MIT/green)  ![Badge em Desenvolvimento](https://badgen.net/static/status/EM%20DESENVOLVIMENTO/yellow) ![Badge Versão](https://badgen.net/static/versão/2.0.1/orange)
 </div>
 
 ### Tópicos
@@ -123,6 +123,30 @@ O app **Payroll** foi criado para gerenciar os pagamentos de funcionários de fo
 3. **Pagamentos**: Registre os pagamentos mensais e acompanhe o impacto de adiantamentos no saldo final.
 
 > **Nota:** O app está projetado para expandir com futuras funcionalidades, como geração de recibos.
+
+## Gerenciamento de Arquivos (File Manager)
+
+O app **File Manager** foi criado para gerenciar arquivos relacionados aos funcionários de forma eficiente e organizada. Ele permite o upload, armazenamento e visualização de documentos importantes, garantindo que todas as informações estejam centralizadas e acessíveis.
+
+### Principais Funcionalidades
+
+- **Upload de Arquivos**: Permite o upload de arquivos relacionados aos funcionários, como documentos pessoais, certificados e outros documentos relevantes.
+- **Organização por Funcionário**: Cada arquivo é associado a um funcionário específico, facilitando a organização e a busca de documentos.
+- **Controle de Versões**: Mantém um histórico de uploads e atualizações de arquivos, garantindo que as versões anteriores sejam preservadas.
+
+### Benefícios do App File Manager
+
+- **Centralização de Documentos**: Todos os documentos relacionados aos funcionários são armazenados em um único local, facilitando o acesso e a gestão.
+- **Segurança e Controle**: O acesso aos arquivos é controlado pelo sistema de permissões do Django, garantindo que apenas usuários autorizados possam visualizar ou editar os documentos.
+- **Integração com Outros Apps**: Integra-se com o app **Employees**, permitindo que os arquivos sejam facilmente acessados a partir do perfil de cada funcionário.
+
+### Como Usar
+
+1. **Upload de Arquivos**: Acesse o perfil do funcionário e utilize a seção de upload para adicionar novos documentos.
+2. **Visualização e Download**: Os arquivos podem ser visualizados e baixados diretamente a partir do perfil do funcionário.
+3. **Atualização de Arquivos**: Novas versões de documentos podem ser carregadas, mantendo um histórico de alterações.
+
+> **Nota:** O app está projetado para expandir com futuras funcionalidades, como a categorização de documentos e a geração de relatórios de arquivos.
 
 ## Ferramentas Utilizadas
 

@@ -1,7 +1,11 @@
 import os
 
+EXCLUDED_ENVIRONMENTS = ['env', 'venv', '.venv', 'virtualenv', 'myenv']
+
 def delete_migration_files(directory):
     for root, dirs, files in os.walk(directory):
+        if any(excluded in root for excluded in EXCLUDED_ENVIRONMENTS):
+            continue
         if 'migrations' in dirs:
             migration_dir = os.path.join(root, 'migrations')
             for file in os.listdir(migration_dir):

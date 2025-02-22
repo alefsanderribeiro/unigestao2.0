@@ -31,9 +31,9 @@ Descreva o que realmente está acontecendo (inclua mensagens de erro, se houver)
 Inclua quaisquer logs de erro ou detalhes relevantes.
 
 ## Prioridade
-[ ] Alta
-[ ] Média
-[ ] Baixa
+- [ ] Alta  
+- [ ] Média  
+- [ ] Baixa
 
 ## Reproduzível?
 - [ ] Sim

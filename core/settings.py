@@ -1,3 +1,4 @@
+import sys
 from decouple import config
 from pathlib import Path
 
@@ -157,3 +158,16 @@ from core.jazzmin_config import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS  # Centraliz
 THOUSAND_SEPARATOR = '.'
 USE_THOUSAND_SEPARATOR = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ------------------------------------------------------------
+# CONFIGURAÇÃO DO BANCO DE DADOS PARA TESTES
+# ------------------------------------------------------------
+
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR /  'db_test.sqlite3',
+        }
+    }

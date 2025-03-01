@@ -7,9 +7,16 @@ WORKDIR /app
 # Instala as dependências do sistema operacional 
 RUN apt-get update && apt-get install -y curl
 
+
+RUN apt-get install dos2unix
+
 # Copia o script wait-for-it.sh para o container
 COPY /scripts/wait-for-it.sh /app/
 COPY /scripts/entrypoint.sh /app/
+
+# Converte os scripts para o formato Unix
+RUN dos2unix /app/wait-for-it.sh
+RUN dos2unix /app/entrypoint.sh
 
 # Atribui permissão de execução para o wait-for-it.sh
 RUN chmod +x /app/wait-for-it.sh

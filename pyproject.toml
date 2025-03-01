@@ -1,0 +1,18 @@
+[project]
+name = "unigestao2-0"
+version = "2.0.2"
+description = "O Uni Gestão é um sistema web desenvolvido com Django para empresas que buscam: Organização centralizada de dados de funcionários fornecedores e clientes; Integração com APIs externas para automação como a emissão de notas fiscais; Agilidade e segurança no gerenciamento de dados essenciais. Este sistema é ideal para otimizar processos internos, reduzindo erros e promovendo eficiência no fluxo de trabalho empresarial."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asgiref==3.8.1",
+    "django==5.1.2",
+    "django-jazzmin==3.0.1",
+    "flake8==7.1.1",
+    "gunicorn==23.0.0",
+    "psycopg2-binary==2.9.9",
+    "python-decouple==3.8",
+    "sqlparse==0.5.1",
+    "typing-extensions==4.12.2",
+    "tzdata==2024.2",
+]

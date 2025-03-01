@@ -1,0 +1,1538 @@
+1
+00:00:04,650 --> 00:00:06,110
+
+
+3
+00:00:04,650 --> 00:00:06,110
+{\an7}Dificuldade de aquisição:
+?
+
+4
+00:00:04,650 --> 00:00:06,110
+{\an7}-Três itens são necessários para criar [Elixir da Vida]. (0/3)
+ Eles podem ser encontrados no Castelo Demoníaco.
+
+5
+00:00:04,650 --> 00:00:06,110
+Uma poção mística que cura qualquer doença por meio de uma poderosa magia.
+
+6
+00:00:06,110 --> 00:00:08,070
+cura qualquer doença
+
+7
+00:00:08,070 --> 00:00:11,350
+Um item que cura
+qualquer tipo de doença?
+
+8
+00:00:17,960 --> 00:00:22,610
+Talvez eu possa curar a Doença
+do Sono Eterno da mamãe.
+
+9
+00:00:23,310 --> 00:00:27,340
+O Elixir da Vida é formado
+por três ingredientes...
+
+10
+00:00:27,340 --> 00:00:31,890
+Não tenho nenhum deles,
+mas sei muito bem onde eles estão.
+
+11
+00:00:32,830 --> 00:00:37,510
+Dito isso, seria suicídio entrar naquele
+castelo sem ficar mais forte antes.
+
+12
+00:00:38,100 --> 00:00:39,960
+Preciso subir de nível...
+
+13
+00:00:41,360 --> 00:00:42,270
+Preciso...
+
+14
+00:00:43,520 --> 00:00:45,480
+...ficar mais forte.
+
+15
+00:02:16,720 --> 00:02:19,330
+Quê?! Então vai aceitar?
+
+16
+00:02:19,330 --> 00:02:21,350
+A situação mudou.
+
+17
+00:02:21,350 --> 00:02:25,540
+Estou disposto a participar das
+dezenove raids Rank C com você.
+
+18
+00:02:25,850 --> 00:02:26,910
+Beleza!
+
+19
+00:02:26,910 --> 00:02:28,770
+Mas com uma condição.
+
+20
+00:02:28,770 --> 00:02:31,590
+Claro! É só dizer!
+
+21
+00:02:32,780 --> 00:02:35,430
+Você e eu entraremos sozinhos.
+
+22
+00:02:37,820 --> 00:02:42,470
+Está dizendo que você e eu seremos os únicos
+a fazer a dungeon Rank C, chefe?
+
+23
+00:02:43,050 --> 00:02:44,600
+Isso mesmo.
+
+24
+00:02:45,790 --> 00:02:51,440
+M-Mas os portais Rank C exigem no
+mínimo oito membros para entrar.
+
+25
+00:02:52,100 --> 00:02:54,150
+Contrataremos gente
+pra cumprir a cota.
+
+26
+00:02:54,600 --> 00:02:57,620
+Como o Hwang Dongsuk fazia.
+
+27
+00:02:59,370 --> 00:03:02,580
+M-Mas isso não é arriscado demais?
+
+28
+00:03:03,070 --> 00:03:04,620
+Pense da seguinte forma...
+
+29
+00:03:05,250 --> 00:03:10,000
+Se formos apenas nós dois, poderemos fechar
+essas dezenove raids sem nenhuma vítima.
+
+30
+00:03:10,610 --> 00:03:13,540
+Uma equipe capaz de realizar dezenove
+raids sem ninguém se ferir—
+
+31
+00:03:14,330 --> 00:03:18,430
+Isso não seria perfeito para
+impressionar o seu pai?
+
+32
+00:03:18,870 --> 00:03:20,430
+Entendi.
+
+33
+00:03:24,240 --> 00:03:25,940
+Eu topo, chefe!
+
+34
+00:03:25,940 --> 00:03:29,080
+Farei os preparativos dos
+membros extras e dos portais!
+
+35
+00:04:07,500 --> 00:04:10,060
+E então, como posso te ajudar?
+
+36
+00:04:11,220 --> 00:04:14,980
+Impressionante.
+Digno de uma caçadora Rank S.
+
+37
+00:04:15,580 --> 00:04:18,980
+Estava esperando o momento certo
+para te abordar.
+
+38
+00:04:18,980 --> 00:04:20,950
+Perdoe-me por interromper
+seu treinamento.
+
+39
+00:04:20,950 --> 00:04:23,430
+Aqui está o meu cartão.
+
+40
+00:04:21,320 --> 00:04:24,200
+{\an7}Gerente – Departamento Pessoal
+
+41
+00:04:21,440 --> 00:04:24,200
+Construtora Yoojin
+
+42
+00:04:33,090 --> 00:04:35,800
+Os portais começaram a aparecer
+há mais de uma década,
+
+43
+00:04:36,470 --> 00:04:39,300
+e desde então o mundo mudou
+a um ritmo vertiginoso.
+
+44
+00:04:40,090 --> 00:04:44,470
+Infraestrutura, economia,
+mídia, até a política...
+
+45
+00:04:44,470 --> 00:04:48,020
+As dungeons mudaram
+todas essas coisas.
+
+46
+00:04:48,700 --> 00:04:51,940
+Em particular, a nossa infraestrutura,
+a base da vida de todos,
+
+47
+00:04:51,940 --> 00:04:55,400
+...
+
+48
+00:04:51,940 --> 00:04:55,400
+Grande Empresa de Energia
+Pede Autorização para
+Aumentar Tarifas
+
+49
+00:04:51,940 --> 00:04:55,400
+não pode mais operar sem
+os recursos das dungeons.
+
+50
+00:04:55,400 --> 00:05:02,870
+E os únicos capazes de trazer esses recursos
+vitais para o nosso mundo são os caçadores.
+
+51
+00:05:03,270 --> 00:05:06,550
+Esses caçadores, por sua vez,
+são supervisionados pela
+
+52
+00:05:06,550 --> 00:05:10,290
+Associação de Caçadores,
+uma instituição pública.
+
+53
+00:05:12,170 --> 00:05:15,750
+A Associação pega caçadores despertos,
+classifica-os por rank,
+
+54
+00:05:15,750 --> 00:05:18,120
+registra-os e os supervisionam.
+
+55
+00:05:18,630 --> 00:05:21,250
+Eles administram os portais
+que não vão a leilão,
+
+56
+00:05:21,250 --> 00:05:23,970
+e lidam com dungeon breaks.
+
+57
+00:05:24,630 --> 00:05:28,730
+Mas a Associação nada mais é
+do que um serviço estatal.
+
+58
+00:05:28,730 --> 00:05:34,380
+A grande maioria desses recursos vitais
+das dungeons são coletados pelas guildas...
+
+59
+00:05:34,800 --> 00:05:38,110
+as empresas que contratam
+Caçadores como serviço.
+
+60
+00:05:38,770 --> 00:05:43,820
+Graças aos recursos que coletam das dungeons,
+as guildas se tornaram extremamente lucrativas.
+
+61
+00:05:44,460 --> 00:05:49,250
+Dentre elas, a Guilda dos Caçadores, a
+Guilda Tigre Branco, a Guilda dos Ceifadores,
+
+62
+00:05:49,250 --> 00:05:54,060
+a Guilda da Fama, e a Guilda dos Cavaleiros
+são as maiores guildas do país.
+
+63
+00:05:54,730 --> 00:05:58,350
+Na prática, elas têm o monopólio sobre
+os lucros relacionados às dungeons.
+
+64
+00:05:59,610 --> 00:06:03,550
+E eu não vejo motivos para ficar parado
+e permitir que isso continue.
+
+65
+00:06:03,920 --> 00:06:07,420
+Principalmente com a importância
+desses recursos para a vida cotidiana.
+
+66
+00:06:07,420 --> 00:06:11,390
+Não podemos deixá-los nas mãos
+de um grupo de mercenários.
+
+67
+00:06:11,920 --> 00:06:17,190
+Contribuímos bastante para este país.
+É nossa responsabilidade cuidar disso também.
+
+68
+00:06:19,070 --> 00:06:22,990
+E a formação desta guilda é
+essencial para conseguirmos isso.
+
+69
+00:06:24,100 --> 00:06:25,660
+S-Sim, senhor.
+
+70
+00:06:28,190 --> 00:06:31,580
+Mesmo assim, recrutar um Caçador
+Rank S para atuar com meu irmão
+
+71
+00:06:31,580 --> 00:06:35,420
+seria uma empreitada de muito risco.
+
+72
+00:06:35,420 --> 00:06:38,630
+Mas... não é o meu caso.
+
+73
+00:06:53,400 --> 00:06:56,690
+Parece que não está contabilizando
+as coisas que faço a mais.
+
+74
+00:06:54,600 --> 00:06:56,680
+...
+
+75
+00:06:54,600 --> 00:06:56,680
+Notificação
+
+76
+00:06:54,600 --> 00:06:56,680
+Você recebeu uma recompensa.
+Visualizar recompensa?
+
+77
+00:06:54,600 --> 00:06:56,680
+Sim Não
+
+78
+00:06:56,770 --> 00:06:59,810
+...
+
+79
+00:06:56,770 --> 00:06:59,810
+Informação da Missão
+
+80
+00:06:56,770 --> 00:06:59,810
+[Missão Secreta: Treinamento de Força chegou.]
+
+81
+00:06:56,770 --> 00:06:59,810
+Objetivo
+
+82
+00:06:56,770 --> 00:06:59,810
+Flexões [200/100]
+Abdominais [200/100]
+Agachamentos [200/100]
+Corrida [20/10km]
+
+83
+00:06:56,770 --> 00:06:59,810
+AVISO: O não cumprimento
+da missão diária resultará
+em devida penalidade.
+
+84
+00:06:57,550 --> 00:07:02,690
+Acho que aquela Caixa Misteriosa Amaldiçoada
+que foi oferecida na missão secreta
+
+85
+00:06:59,810 --> 00:07:01,900
+...
+
+86
+00:06:59,810 --> 00:07:01,900
+Notificação
+
+87
+00:06:59,810 --> 00:07:01,900
+Você recebeu uma recompensa.
+Visualizar recompensa?
+
+88
+00:06:59,810 --> 00:07:01,900
+Sim Não
+
+89
+00:07:01,900 --> 00:07:04,860
+...
+
+90
+00:07:01,900 --> 00:07:04,860
+Recompensas da Missão
+
+91
+00:07:01,900 --> 00:07:04,860
+Você recebeu uma recompensa.
+
+92
+00:07:01,900 --> 00:07:04,860
+1. Recuperação Total
+
+93
+00:07:01,900 --> 00:07:04,860
+2. Pontos de Atributo +10
+
+94
+00:07:01,900 --> 00:07:04,860
+3.
+
+95
+00:07:01,900 --> 00:07:04,860
+Caixa Misteriosa Abençoada
+
+96
+00:07:01,900 --> 00:07:04,860
+Caixa Misteriosa Amaldiçoada
+
+97
+00:07:01,900 --> 00:07:04,860
+Aceitar as recompensas?
+
+98
+00:07:02,690 --> 00:07:05,470
+está fora do meu alcance agora.
+
+99
+00:07:06,160 --> 00:07:10,780
+Tinha esperança de ser um item tão valioso
+quanto a Chave do Castelo Demoníaco...
+
+100
+00:07:11,170 --> 00:07:14,550
+Espera. Talvez a caixa de
+loot aleatório normal
+
+101
+00:07:14,550 --> 00:07:19,000
+tenha uma chave para algo como
+a dungeon instanciada de antes...
+
+102
+00:07:27,250 --> 00:07:28,770
+Ou não...
+
+103
+00:07:32,130 --> 00:07:37,350
+...
+
+104
+00:07:32,130 --> 00:07:37,350
+Status
+
+105
+00:07:32,130 --> 00:07:37,350
+26
+
+106
+00:07:32,130 --> 00:07:37,350
+Nível
+
+107
+00:07:32,130 --> 00:07:37,350
+Classe: <b>Nenhuma</b>
+
+108
+00:07:32,130 --> 00:07:37,350
+Título: <b>Assassino de Lobos</b>
+
+109
+00:07:32,130 --> 00:07:37,350
+{\an1}Força: 71 Vitalidade: 43
+
+110
+00:07:32,130 --> 00:07:37,350
+{\an1}Agilidade: 80 Inteligência: 43
+
+111
+00:07:32,130 --> 00:07:37,350
+{\an1}Percepção: 69
+
+112
+00:07:32,130 --> 00:07:37,350
+{\an1}3
+
+113
+00:07:32,130 --> 00:07:37,350
+{\an1}Pontos de
+Atributo
+disponíveis
+
+114
+00:07:32,440 --> 00:07:34,620
+Do jeito que meus atributos
+estão altos agora,
+
+115
+00:07:34,620 --> 00:07:37,350
+três pontos não bastam mais
+pra mudar coisa nenhuma.
+
+116
+00:07:38,030 --> 00:07:40,740
+Queria subir de nível
+de forma mais eficaz,
+
+117
+00:07:40,740 --> 00:07:43,820
+mas preciso esperar o Jinho
+para as dungeons de Rank C.
+
+118
+00:07:44,690 --> 00:07:45,560
+Centopeia Gigante do Deserto
+
+119
+00:07:45,650 --> 00:07:50,090
+Espera, tem a zona de penalidade!
+Se eu lutar contra aquela centopeia...
+
+120
+00:07:50,540 --> 00:07:55,950
+Não... Talvez agora eu consiga escapar com mais
+facilidade, mas será que consigo derrotá-la?
+
+121
+00:07:55,950 --> 00:07:58,770
+E nada garante que isso me daria
+pontos de experiência.
+
+122
+00:08:02,040 --> 00:08:04,000
+...
+
+123
+00:08:02,040 --> 00:08:04,000
+Aviso
+
+124
+00:08:02,040 --> 00:08:04,000
+{\an7}Nova mensagem: 1
+
+125
+00:08:02,040 --> 00:08:04,000
+{\an7}De: <b>Associação de Caçadores</b>
+
+126
+00:08:02,040 --> 00:08:04,000
+{\an7}Urgente: <b>Solicitação para participar
+ de portal Rank D.</b>
+
+127
+00:08:02,040 --> 00:08:04,000
+Apagar Visualizar
+
+128
+00:08:02,040 --> 00:08:04,560
+Precisam de caçadores
+para um portal Rank D?
+
+129
+00:08:04,910 --> 00:08:08,170
+"A Associação de Caçadores está
+formando uma equipe de ataque"...
+
+130
+00:08:08,540 --> 00:08:11,680
+Significa que não
+conseguirei lutar sozinho.
+
+131
+00:08:11,970 --> 00:08:13,250
+Devo recusar?
+
+132
+00:08:15,820 --> 00:08:17,600
+Mas acho que é melhor que nada.
+
+133
+00:08:22,210 --> 00:08:23,810
+Que frustrante.
+
+134
+00:08:34,770 --> 00:08:37,210
+Naturalmente, nem tive chance
+contra o senhor, mestre.
+
+135
+00:08:38,810 --> 00:08:41,250
+Só não estou pronto para
+ser derrotado ainda.
+
+136
+00:08:41,710 --> 00:08:46,540
+Mas é uma pena. Queria que o senhor
+tivesse lutado com tudo...
+
+137
+00:08:46,540 --> 00:08:50,780
+Ainda preocupado com isso?
+Faz meses que perdi o meu braço.
+
+138
+00:08:54,060 --> 00:08:56,110
+Uma convocação de emergência?
+
+139
+00:08:56,450 --> 00:09:00,010
+Caçadores de rank baixo só são chamados
+pra coisas pouco piores do que ir na padaria.
+
+140
+00:09:00,010 --> 00:09:02,770
+Mestre, o senhor realmente
+não pensa em aposentadoria?
+
+141
+00:09:02,770 --> 00:09:04,250
+Aposentadoria?
+
+142
+00:09:08,890 --> 00:09:14,330
+Você tem razão. Um velho sem
+um braço não deve ajudar muito.
+
+143
+00:09:14,330 --> 00:09:16,290
+Não, não foi o que quis dizer!
+
+144
+00:09:16,290 --> 00:09:20,180
+Mas embora eu tenha perdido
+um braço, eu sobrevivi.
+
+145
+00:09:20,180 --> 00:09:22,580
+Meus melhores anos
+já ficaram para trás,
+
+146
+00:09:22,580 --> 00:09:26,120
+mas gostaria de aproveitar o tempo que
+me resta contribuindo para a sociedade.
+
+147
+00:09:34,530 --> 00:09:36,640
+Parece que chegou a minha próxima raid.
+
+148
+00:09:37,650 --> 00:09:39,100
+Ei, querido...
+
+149
+00:09:39,810 --> 00:09:43,220
+Não está na hora de considerar
+fazer algo que não seja caçar?
+
+150
+00:09:43,220 --> 00:09:45,230
+De novo essa conversa?
+
+151
+00:09:45,230 --> 00:09:49,420
+É que é muito perigoso.
+Muita gente morreu na última raid,
+
+152
+00:09:49,420 --> 00:09:52,930
+e você sobreviveu por muito pouco.
+
+153
+00:09:53,310 --> 00:09:55,410
+Hã? Ah, sim...
+
+154
+00:09:56,350 --> 00:09:58,200
+Papai! Colo!
+
+155
+00:10:00,240 --> 00:10:04,780
+Mas ano que vem a Eunji começará na creche,
+e a Eunha estará no fundamental II.
+
+156
+00:10:04,780 --> 00:10:06,230
+Precisaremos de dinheiro.
+
+157
+00:10:06,230 --> 00:10:07,750
+Isso é verdade, mas...
+
+158
+00:10:07,750 --> 00:10:13,720
+Não se preocupa. A Associação não manda
+Caçadores de rank baixo para dungeons perigosas.
+
+159
+00:10:14,860 --> 00:10:17,680
+Aquela vez foi uma exceção.
+
+160
+00:10:17,680 --> 00:10:21,410
+É verdade. Desculpa por
+te perturbar com isso.
+
+161
+00:10:21,410 --> 00:10:22,770
+Não se preocupe.
+
+162
+00:10:23,400 --> 00:10:24,980
+Tome cuidado.
+
+163
+00:10:25,600 --> 00:10:27,890
+Pode deixar! Eu te amo.
+
+164
+00:10:27,890 --> 00:10:29,010
+Papai?
+
+165
+00:10:29,010 --> 00:10:30,730
+Sim? Que foi?
+
+166
+00:10:30,730 --> 00:10:32,910
+Papai, você é forte?
+
+167
+00:10:32,910 --> 00:10:34,770
+Claro que sou!
+
+168
+00:10:34,770 --> 00:10:38,280
+O papai acaba com
+monstros assustadores!
+
+169
+00:10:38,280 --> 00:10:42,660
+Uau, você é muito forte!
+
+170
+00:10:43,400 --> 00:10:45,480
+Que cara de pau, a sua.
+
+171
+00:10:48,130 --> 00:10:50,130
+Do que está falando?
+
+172
+00:10:50,130 --> 00:10:53,780
+Não acredito que você me prendeu
+naquela entrevista. Só tempo perdido!
+
+173
+00:10:53,780 --> 00:10:57,070
+Eu assisti. Você deixou
+uma boa impressão.
+
+174
+00:10:57,070 --> 00:10:59,720
+Achei suas respostas bem profundas.
+
+175
+00:10:59,720 --> 00:11:01,600
+Não vim aqui pra você
+puxar o meu saco!
+
+176
+00:11:01,600 --> 00:11:05,310
+E aposto que aquela entrevista
+era pra ter sido com você!
+
+177
+00:11:05,310 --> 00:11:07,990
+Bom, considerando que a oferta
+feita ao Presidente Go
+
+178
+00:11:07,990 --> 00:11:14,270
+foi para um Caçador talentoso e de grande
+caráter que se dedica ao trabalho...
+
+179
+00:11:14,270 --> 00:11:17,460
+Será que foi mesmo para mim?
+
+180
+00:11:17,930 --> 00:11:20,240
+Ao menos você sabe que não vale nada.
+
+181
+00:11:21,490 --> 00:11:25,210
+Mas que se exploda!
+O que você quer?
+
+182
+00:11:25,210 --> 00:11:29,580
+Não acho que me chamou aqui
+só pra eu te dar esporro.
+
+183
+00:11:29,580 --> 00:11:34,630
+Tem algo que eu achei
+que você deveria saber...
+
+184
+00:11:35,630 --> 00:11:39,000
+A Construtora Yoojin está pronta
+para inaugurar a própria guilda.
+
+185
+00:11:39,000 --> 00:11:42,010
+Eu sei. Eles estão tentando
+mexer os pauzinhos em segredo.
+
+186
+00:11:42,440 --> 00:11:45,130
+Houve rumores sobre
+recrutamento na minha guilda.
+
+187
+00:11:45,130 --> 00:11:49,690
+Se você já sabia, então acho que
+desperdicei o seu tempo.
+
+188
+00:11:49,690 --> 00:11:53,200
+E você sabia que eu já sabia.
+
+189
+00:11:53,200 --> 00:11:55,080
+Dá pra parar com a palhaçada?
+
+190
+00:11:56,440 --> 00:12:00,070
+Vou perguntar mais uma vez.
+O que você quer?
+
+191
+00:12:03,710 --> 00:12:08,330
+Você quase não telefona mais.
+Está tudo bem?
+
+192
+00:12:08,860 --> 00:12:09,650
+Sim.
+
+193
+00:12:09,650 --> 00:12:11,300
+E quanto ao trabalho?
+
+194
+00:12:11,730 --> 00:12:14,170
+Sim. Vai indo.
+
+195
+00:12:14,170 --> 00:12:19,680
+Você sempre foi meio medrosa.
+Está dando conta de ser Caçadora?
+
+196
+00:12:19,680 --> 00:12:24,620
+Você é Rank B, certo? Tenho certeza de que
+a maioria das pessoas seria muito forte,
+
+197
+00:12:24,620 --> 00:12:27,680
+mas será que você não está
+atrapalhando os outros?
+
+198
+00:12:28,020 --> 00:12:30,390
+Você devia voltar para casa
+e ajudar na loja.
+
+199
+00:12:30,390 --> 00:12:31,810
+O seu pai também já está—
+
+200
+00:12:31,810 --> 00:12:33,690
+Pare de se meter na minha vida!
+
+201
+00:12:34,500 --> 00:12:37,170
+Eu consigo fazer as minhas escolhas,
+então, pare com isso!
+
+202
+00:12:37,170 --> 00:12:38,150
+Ei, isso é jeito de—
+
+203
+00:12:46,050 --> 00:12:47,660
+Estou atrapalhando os outros?
+
+204
+00:12:49,610 --> 00:12:50,620
+Mas...
+
+205
+00:12:54,400 --> 00:12:57,450
+Quero tentar mais um pouco.
+
+206
+00:13:09,930 --> 00:13:11,890
+...
+
+207
+00:13:09,930 --> 00:13:11,890
+Mensagem
+
+208
+00:13:09,930 --> 00:13:11,890
+Aviso
+
+209
+00:13:09,930 --> 00:13:11,890
+{\an7}Nova mensagem: 1
+
+210
+00:13:09,930 --> 00:13:11,890
+{\an7}De: <b>Associação de Caçadores</b>
+
+211
+00:13:09,930 --> 00:13:11,890
+{\an7}Urgente: <b>Solicitação para participar
+ de portal Rank D.</b>
+
+212
+00:13:09,930 --> 00:13:11,890
+Apagar Visualizar
+
+213
+00:13:29,380 --> 00:13:30,580
+Com licença.
+
+214
+00:13:32,410 --> 00:13:35,210
+Como posso te ajudar,
+Caçadora Cha Hae-in?
+
+215
+00:13:35,620 --> 00:13:40,370
+Enquanto treinava, eu fui abordada
+por um olheiro da Construtora Yoojin.
+
+216
+00:13:40,370 --> 00:13:41,680
+Vim informá-lo sobre isso.
+
+217
+00:13:43,640 --> 00:13:50,060
+Aparentemente, eles estão começando uma
+guilda e me queriam como Mestre da Guilda.
+
+218
+00:13:51,080 --> 00:13:55,960
+Como você está me contando tudo isso,
+presumo que tenha recusado.
+
+219
+00:13:55,960 --> 00:13:58,790
+Sim. Eu recusei a proposta.
+
+220
+00:13:59,250 --> 00:14:02,100
+É um alívio saber. Muito obrigado.
+
+221
+00:14:02,100 --> 00:14:04,530
+Sem problemas. E também...
+
+222
+00:14:04,530 --> 00:14:08,710
+No caminho para cá, eu
+passei pelo Presidente Baek.
+
+223
+00:14:08,710 --> 00:14:11,000
+Sobre o que estavam conversando?
+
+224
+00:14:19,380 --> 00:14:23,560
+O que você acha da Ilha de Jeju?
+
+225
+00:14:24,090 --> 00:14:27,940
+Ilha de Jeju? Por que a pergunta?
+
+226
+00:14:27,940 --> 00:14:32,540
+Desde a raid fracassada,
+a ilha está isolada,
+
+227
+00:14:32,540 --> 00:14:35,910
+e só é feito reconhecimento
+da costa ocasionalmente.
+
+228
+00:14:35,910 --> 00:14:39,570
+O povo recebe uma única atualização
+anual sobre quaisquer mudanças.
+
+229
+00:14:40,210 --> 00:14:44,680
+As pessoas estão tentando esquecer
+aquela ilha e o terror que ela representa.
+
+230
+00:14:45,040 --> 00:14:47,490
+E daí? Tem algo de errado nisso?
+
+231
+00:14:47,490 --> 00:14:52,470
+No entanto, por mais comuns que
+os portais tenham se tornado,
+
+232
+00:14:52,470 --> 00:14:55,480
+ou o quanto eu seja bajulado como
+"arma definitiva" da humanidade,
+
+233
+00:14:55,480 --> 00:14:59,590
+nunca vou me esquecer daquela ilha,
+ou do que aconteceu por lá.
+
+234
+00:15:00,500 --> 00:15:04,840
+Eu pretendo finalizar aquela ilha
+num futuro próximo.
+
+235
+00:15:05,490 --> 00:15:09,840
+Para isso, preciso que você e os outros
+também estejam dispostos.
+
+236
+00:15:09,840 --> 00:15:15,360
+Devemos obter força, reunir aliados
+e influenciar a opinião pública.
+
+237
+00:15:15,360 --> 00:15:18,360
+Por isso você marcou a entrevista
+e está treinando novos Caçadores.
+
+238
+00:15:25,970 --> 00:15:28,370
+Você também não teria motivo?
+
+239
+00:15:29,070 --> 00:15:31,780
+Não tem algo que
+deixou algo naquela ilha?
+
+240
+00:15:38,790 --> 00:15:42,060
+Eunseok... Byung-gu...
+
+241
+00:15:46,600 --> 00:15:49,480
+Por favor. Eu imploro...
+
+242
+00:15:50,970 --> 00:15:52,850
+Eles precisam morrer.
+
+243
+00:15:55,650 --> 00:15:57,140
+Estou saindo.
+
+244
+00:15:57,140 --> 00:15:59,440
+Até no feriado você vai trabalhar?
+
+245
+00:16:00,450 --> 00:16:02,370
+Você vive ocupado agora...
+
+246
+00:16:03,610 --> 00:16:04,650
+Pois é.
+
+247
+00:16:04,650 --> 00:16:09,690
+E pensar que, depois de cada portal, você sempre
+ficava de molho se recuperando dos ferimentos.
+
+248
+00:16:09,690 --> 00:16:11,450
+São frutos do seu treino?
+
+249
+00:16:11,450 --> 00:16:16,190
+Provavelmente. De qualquer forma, agora
+consigo manter um padrão de vida mais estável.
+
+250
+00:16:16,190 --> 00:16:17,620
+Isso não é bom?
+
+251
+00:16:17,620 --> 00:16:19,690
+Bom, isso é.
+
+252
+00:16:19,690 --> 00:16:22,150
+Espera, Jinwoo!
+Não vai levar suas coisas?
+
+253
+00:16:22,150 --> 00:16:24,540
+Está tudo bem. Estou indo.
+
+254
+00:16:24,540 --> 00:16:25,980
+Ei, espera!
+
+255
+00:16:29,050 --> 00:16:31,760
+Não está indo no
+mercadinho da esquina...
+
+256
+00:16:34,930 --> 00:16:38,410
+Eu não despertei com um poder físico,
+o que significa que minha espada
+
+257
+00:16:38,410 --> 00:16:40,300
+é inútil contra monstros mágicos.
+
+258
+00:16:41,040 --> 00:16:45,590
+As artes marciais às quais dediquei décadas
+são inúteis dentro de uma dungeon.
+
+259
+00:16:45,590 --> 00:16:50,590
+Um espadachim como eu ganhar poderes
+focados em magia é uma piada do destino.
+
+260
+00:16:50,590 --> 00:16:53,350
+Mas tenho certeza de que
+há motivo para isso.
+
+261
+00:16:56,760 --> 00:16:58,280
+Você é o...
+
+262
+00:16:58,280 --> 00:16:59,750
+Sr. Song?
+
+263
+00:16:59,750 --> 00:17:03,350
+Não acredito que é você mesmo, Sung!
+
+264
+00:17:03,350 --> 00:17:04,840
+Há quanto tempo.
+
+265
+00:17:04,840 --> 00:17:07,340
+Não achei que te encontraria
+num lugar como este!
+
+266
+00:17:07,340 --> 00:17:11,900
+Mas cadê aquele rapaz
+com jeito gentil?
+
+267
+00:17:11,900 --> 00:17:14,900
+Você mudou isso tudo isso
+nesses poucos meses?
+
+268
+00:17:15,730 --> 00:17:17,060
+Aliás...
+
+269
+00:17:17,060 --> 00:17:19,520
+Você não tinha perdido uma perna?
+
+270
+00:17:19,520 --> 00:17:23,850
+Ah... Quando acordei no
+hospital, ela estava lá.
+
+271
+00:17:23,850 --> 00:17:25,270
+Entendi!
+
+272
+00:17:25,270 --> 00:17:30,030
+Devia haver um Healer de rank alto
+entre os Caçadores que te buscaram!
+
+273
+00:17:30,850 --> 00:17:35,080
+Seja como for, é um alívio ver que um
+jovem como você está totalmente curado.
+
+274
+00:17:35,080 --> 00:17:36,770
+Muito obrigado.
+
+275
+00:17:37,170 --> 00:17:39,140
+Mas o senhor, Sr. Song...
+
+276
+00:17:39,140 --> 00:17:43,740
+Já havia passado tempo demais
+desde o momento em que me feri.
+
+277
+00:17:43,740 --> 00:17:45,530
+Mas eu não ligo pra isso.
+
+278
+00:17:45,530 --> 00:17:49,710
+Mas sabe, alguém da Associação
+me contou que você estava vivo.
+
+279
+00:17:49,710 --> 00:17:51,820
+Então é bom te ver!
+
+280
+00:17:51,820 --> 00:17:54,260
+E o que o senhor faz aqui, Sr. Song?
+
+281
+00:17:54,260 --> 00:17:57,460
+Fui chamado pela Associação.
+Deve ser urgente.
+
+282
+00:17:57,460 --> 00:17:58,970
+O senhor também?
+
+283
+00:18:12,690 --> 00:18:14,570
+Que coincidência.
+
+284
+00:18:15,130 --> 00:18:17,560
+É uma reunião dos membros
+daquele dia.
+
+285
+00:18:20,020 --> 00:18:21,410
+Jinwoo?
+
+286
+00:18:21,760 --> 00:18:23,030
+Joohee...
+
+287
+00:18:24,160 --> 00:18:27,430
+E... Sr. Kim e Sr. Kang.
+
+288
+00:18:28,860 --> 00:18:30,090
+Era o esperado.
+
+289
+00:18:30,500 --> 00:18:34,930
+Naquele dia, nós sacrificamos
+o Sung para escapar.
+
+290
+00:18:35,540 --> 00:18:41,100
+E não posso culpar o Kim por ter vergonha
+de olhar para mim, depois do que ele fez.
+
+291
+00:18:41,400 --> 00:18:46,240
+Mas... cinco sobreviventes
+daquela tragédia foram reunidos.
+
+292
+00:18:46,240 --> 00:18:47,310
+Sendo assim...
+
+293
+00:18:47,660 --> 00:18:50,780
+Jinwoo, é você mesmo?!
+
+294
+00:18:50,780 --> 00:18:52,950
+Você parece outra pessoa!
+
+295
+00:18:52,950 --> 00:18:54,990
+Sim. Há quanto tempo.
+
+296
+00:18:54,990 --> 00:18:58,120
+Está muito mais alto,
+e sua perna está bem...
+
+297
+00:18:58,550 --> 00:19:00,790
+Acho que você estava mesmo bem
+quando te visitei.
+
+298
+00:19:00,790 --> 00:19:02,380
+Hã? Você me visitou?
+
+299
+00:19:07,480 --> 00:19:12,090
+Show! Tem uma gatinha nesse grupo.
+
+300
+00:19:14,190 --> 00:19:18,090
+Que foi, gracinha?
+Você e o fulano aí estão juntos?
+
+301
+00:19:18,720 --> 00:19:20,210
+Vem brincar com a gente, larga—
+
+302
+00:19:20,210 --> 00:19:21,570
+Silêncio.
+
+303
+00:19:24,170 --> 00:19:26,020
+Vocês não saíram a passeio.
+
+304
+00:19:29,030 --> 00:19:33,690
+Agora, informarei nossos Caçadores
+regulares. Aqui, por favor.
+
+305
+00:19:34,430 --> 00:19:35,650
+O que está acontecendo?
+
+306
+00:19:35,650 --> 00:19:40,130
+Esses prisioneiros são Caçadores substitutos
+que atuarão com vocês hoje.
+
+307
+00:19:40,130 --> 00:19:44,370
+Caçadores substitutos?!
+Vamos lutar ao lado de criminosos?!
+
+308
+00:19:44,370 --> 00:19:47,920
+Eles são Caçadores condenados,
+mas estão aqui para reduzir suas penas.
+
+309
+00:19:47,920 --> 00:19:49,980
+Não devem causar problemas.
+
+310
+00:19:49,980 --> 00:19:54,510
+Por causa do êxodo dos Caçadores locais, estamos
+com poucos membros. Peço sua compreensão.
+
+311
+00:19:54,870 --> 00:19:56,670
+Que situação...
+
+312
+00:19:57,130 --> 00:20:01,100
+Com vocês também irá Kang Taeshik,
+supervisor da Associação de Caçadores.
+
+313
+00:20:01,100 --> 00:20:04,050
+Ele é Rank B, então, no pior dos casos,
+
+314
+00:20:04,050 --> 00:20:08,370
+ele deve ser capaz de lidar com três
+criminosos Rank C tranquilamente.
+
+315
+00:20:08,370 --> 00:20:10,100
+Por isso, fiquem tranquilos.
+
+316
+00:20:10,450 --> 00:20:14,600
+Não sei se isso é uma boa ideia.
+Joohee, acho melhor você ficar fora dessa raid.
+
+317
+00:20:14,600 --> 00:20:15,820
+E você, Jinwoo?
+
+318
+00:20:16,570 --> 00:20:17,780
+Eu vou.
+
+319
+00:20:21,230 --> 00:20:23,370
+Então, eu também vou!
+
+320
+00:20:24,800 --> 00:20:26,080
+Entendi.
+
+321
+00:20:26,730 --> 00:20:30,670
+Cara, liberdade é bom demais.
+
+322
+00:20:30,940 --> 00:20:34,630
+Nós não somos escravos, maluco.
+Como ainda permitem essas coisas?
+
+323
+00:20:34,630 --> 00:20:37,170
+Calem a boca.
+Vocês foram condenados.
+
+324
+00:20:37,730 --> 00:20:41,430
+Estão cientes do que acontecerá
+se tentarem alguma coisa, sim?
+
+325
+00:20:44,310 --> 00:20:48,650
+Sou Kang Taeshik, inspetor da Equipe de
+Vigilância da Associação de Caçadores.
+
+326
+00:20:49,610 --> 00:20:53,920
+Eles estão sob minha responsabilidade.
+Podem ficar tranquilos.
+
+327
+00:20:54,710 --> 00:20:57,930
+Quem de vocês vai liderar a raid?
+
+328
+00:20:58,880 --> 00:21:02,460
+Sung... Se importa se eu liderar?
+
+329
+00:21:02,460 --> 00:21:03,740
+Sem problemas.
+
+330
+00:21:05,680 --> 00:21:08,050
+Obrigado por me dar
+essa oportunidade.
+
+331
+00:21:08,050 --> 00:21:09,160
+S-Sr. Song?
+
+332
+00:21:09,590 --> 00:21:13,030
+Naquele dia, sete pessoas
+morreram por minha causa.
+
+333
+00:21:13,410 --> 00:21:16,510
+Não há palavras para descrever o quanto
+fracassei na proteção de vocês.
+
+334
+00:21:16,510 --> 00:21:20,100
+Mas... Graças a você,
+seis pessoas sobreviveram.
+
+335
+00:21:20,100 --> 00:21:22,840
+Por isso, permita-me dizer,
+em nome dos outros cinco:
+
+336
+00:21:23,480 --> 00:21:25,680
+Sou grato a você, de coração.
+
+337
+00:21:26,340 --> 00:21:28,920
+Sr. Song, levante-se, por favor.
+
+338
+00:21:31,200 --> 00:21:34,720
+Kim, você não se incomoda
+de eu ser o líder?
+
+339
+00:21:37,000 --> 00:21:38,610
+Faça o que quiser.
+
+340
+00:21:45,280 --> 00:21:49,800
+Nesse caso, a liderança
+nesta dungeon será minha.
+
+341
+00:21:49,800 --> 00:21:52,670
+Entendido. Então, vamos começar.
+
+342
+00:22:00,360 --> 00:22:02,130
+Agora, vamos lá...
+
+343
+00:22:03,530 --> 00:22:05,010
+Vamos entrar na dungeon.
+
+344
+00:23:36,260 --> 00:23:40,020
+{\an1}Você vem escondendo suas habilidades

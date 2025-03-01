@@ -16,6 +16,7 @@ class Command(BaseCommand):
         apps_and_models = {
             'employees': ['Employee'],  # Modelo Employee no app employees
             'bond': ['AdmissionInfo'],  # Modelo AdmissionInfo no app bond
+            'file_manager': ['File', 'NameFile']
         }
 
         # Ações que correspondem às permissões padrão

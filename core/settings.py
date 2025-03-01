@@ -1,3 +1,4 @@
+import sys
 from decouple import config
 from pathlib import Path
 
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_cleanup.apps.CleanupConfig',
 
     # My Apps
     'employees',
@@ -157,3 +159,16 @@ from core.jazzmin_config import JAZZMIN_SETTINGS, JAZZMIN_UI_TWEAKS  # Centraliz
 THOUSAND_SEPARATOR = '.'
 USE_THOUSAND_SEPARATOR = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ------------------------------------------------------------
+# CONFIGURAÇÃO DO BANCO DE DADOS PARA TESTES
+# ------------------------------------------------------------
+
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR /  'db_test.sqlite3',
+        }
+    }

@@ -17,9 +17,9 @@ Por que essa melhoria é importante? Como ela impactará os usuários ou a equip
 O que exatamente a melhoria visa melhorar no sistema? (ex: melhorar a interface, otimizar desempenho, etc.)
 
 ## Prioridade
-[ ] Alta
-[ ] Média
-[ ] Baixa
+- [ ] Alta  
+- [ ] Média  
+- [ ] Baixa
 
 ## Outras Observações
 Se houver alguma consideração adicional ou contexto relevante.
